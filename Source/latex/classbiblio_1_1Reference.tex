@@ -1,0 +1,161 @@
+\hypertarget{classbiblio_1_1Reference}{}\section{biblio\+:\+:Reference Class Reference}
+\label{classbiblio_1_1Reference}\index{biblio\+::\+Reference@{biblio\+::\+Reference}}
+
+
+Classe \hyperlink{classbiblio_1_1Reference}{Reference} permettant de modéliser les objets reference.  
+
+
+
+
+{\ttfamily \#include $<$Reference.\+h$>$}
+
+
+
+Inheritance diagram for biblio\+:\+:Reference\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classbiblio_1_1Reference__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Reference} (std\+::string p\+\_\+auteurs, std\+::string p\+\_\+titre, int p\+\_\+annee, std\+::string p\+\_\+identifiant)\hypertarget{classbiblio_1_1Reference_a9b67b87dbb52b8aed293fff4b8184c5e}{}\label{classbiblio_1_1Reference_a9b67b87dbb52b8aed293fff4b8184c5e}
+
+\item 
+int \hyperlink{classbiblio_1_1Reference_acaa3e9f6b56c94a13374de5ce7984d30}{req\+Annee} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour l\textquotesingle{}année. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Reference_a5ab6c05f95be3beb7591c588413ac6bf}{req\+Auteurs} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour le/les auteurs. \end{DoxyCompactList}\item 
+void \hyperlink{classbiblio_1_1Reference_aee041fbf9b44e02241eb717783a5d8f2}{asg\+Auteurs} (const std\+::string \&p\+\_\+auteurs)
+\begin{DoxyCompactList}\small\item\em des auteurs \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Reference_a2b00f5c1e762abee52ba30bb3fbfab37}{req\+Identifiant} () const 
+\begin{DoxyCompactList}\small\item\em Assigneur d\textquotesingle{}identifiant. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Reference_acc2a2075747a2e26f0d4eaab742f4f31}{req\+Titre} () const 
+\begin{DoxyCompactList}\small\item\em Assigneur de titre. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classbiblio_1_1Reference_a6a1a403b66587341f89aca0e9d6c4f7a}{req\+Reference\+Formate} () const =0
+\item 
+bool \hyperlink{classbiblio_1_1Reference_a48220b30f6704d6f0aca13bf51022375}{operator==} (const \hyperlink{classbiblio_1_1Reference}{Reference} \&ref) const 
+\item 
+virtual \hyperlink{classbiblio_1_1Reference}{Reference} $\ast$ {\bfseries clone} () const =0\hypertarget{classbiblio_1_1Reference_a912da874b8a5221d8e17aa3118d3116b}{}\label{classbiblio_1_1Reference_a912da874b8a5221d8e17aa3118d3116b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classbiblio_1_1Reference}{Reference} permettant de modéliser les objets reference. 
+
+\subsection{Member Function Documentation}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!asg\+Auteurs@{asg\+Auteurs}}
+\index{asg\+Auteurs@{asg\+Auteurs}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{asg\+Auteurs(const std\+::string \&p\+\_\+auteurs)}{asgAuteurs(const std::string &p_auteurs)}}]{\setlength{\rightskip}{0pt plus 5cm}void biblio\+::\+Reference\+::asg\+Auteurs (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+\_\+auteurs}
+\end{DoxyParamCaption}
+)}\hypertarget{classbiblio_1_1Reference_aee041fbf9b44e02241eb717783a5d8f2}{}\label{classbiblio_1_1Reference_aee041fbf9b44e02241eb717783a5d8f2}
+
+
+des auteurs 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+auteurs} & Les noms des auteurs \\
+\hline
+\end{DoxyParams}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!operator==@{operator==}}
+\index{operator==@{operator==}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{operator==(const Reference \&ref) const }{operator==(const Reference &ref) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool biblio\+::\+Reference\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Reference} \&}]{ref}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Reference_a48220b30f6704d6f0aca13bf51022375}{}\label{classbiblio_1_1Reference_a48220b30f6704d6f0aca13bf51022375}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ref} & Un objet de la classe \hyperlink{classbiblio_1_1Reference}{Reference} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\+\_\+auteurs == ref.\+m\+\_\+auteurs \&\& m\+\_\+titre == ref.\+m\+\_\+titre \&\& m\+\_\+annee == ref.\+m\+\_\+annee \&\& m\+\_\+identifiant == ref.\+m\+\_\+identifiant Des opérateurs logiques d\textquotesingle{}égalité 
+\end{DoxyReturn}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Annee@{req\+Annee}}
+\index{req\+Annee@{req\+Annee}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{req\+Annee() const }{reqAnnee() const }}]{\setlength{\rightskip}{0pt plus 5cm}int biblio\+::\+Reference\+::req\+Annee (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Reference_acaa3e9f6b56c94a13374de5ce7984d30}{}\label{classbiblio_1_1Reference_acaa3e9f6b56c94a13374de5ce7984d30}
+
+
+Accesseur pour l\textquotesingle{}année. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em m\+\_\+annee} & L\textquotesingle{}année de référence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+m\+\_\+annee L\textquotesingle{}année de référence 
+\end{DoxyReturn}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Auteurs@{req\+Auteurs}}
+\index{req\+Auteurs@{req\+Auteurs}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{req\+Auteurs() const }{reqAuteurs() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& biblio\+::\+Reference\+::req\+Auteurs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Reference_a5ab6c05f95be3beb7591c588413ac6bf}{}\label{classbiblio_1_1Reference_a5ab6c05f95be3beb7591c588413ac6bf}
+
+
+Accesseur pour le/les auteurs. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+auteurs Le(s) nom(s) de l\textquotesingle{}auteur ou des auteurs 
+\end{DoxyReturn}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Identifiant@{req\+Identifiant}}
+\index{req\+Identifiant@{req\+Identifiant}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{req\+Identifiant() const }{reqIdentifiant() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& biblio\+::\+Reference\+::req\+Identifiant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Reference_a2b00f5c1e762abee52ba30bb3fbfab37}{}\label{classbiblio_1_1Reference_a2b00f5c1e762abee52ba30bb3fbfab37}
+
+
+Assigneur d\textquotesingle{}identifiant. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+identifiant Le code identifiant de l\textquotesingle{}oeuvre 
+\end{DoxyReturn}
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Reference\+Formate@{req\+Reference\+Formate}}
+\index{req\+Reference\+Formate@{req\+Reference\+Formate}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{req\+Reference\+Formate() const =0}{reqReferenceFormate() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string biblio\+::\+Reference\+::req\+Reference\+Formate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classbiblio_1_1Reference_a6a1a403b66587341f89aca0e9d6c4f7a}{}\label{classbiblio_1_1Reference_a6a1a403b66587341f89aca0e9d6c4f7a}
+\begin{DoxyReturn}{Returns}
+os.\+str() Une référence complète 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classbiblio_1_1Journal_adb6c2688745a6a94fe62352b041def94}{biblio\+::\+Journal}, and \hyperlink{classbiblio_1_1Ouvrage_afe9e9c3ca248578c1799bd3bce528835}{biblio\+::\+Ouvrage}.
+
+\index{biblio\+::\+Reference@{biblio\+::\+Reference}!req\+Titre@{req\+Titre}}
+\index{req\+Titre@{req\+Titre}!biblio\+::\+Reference@{biblio\+::\+Reference}}
+\subsubsection[{\texorpdfstring{req\+Titre() const }{reqTitre() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string \& biblio\+::\+Reference\+::req\+Titre (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Reference_acc2a2075747a2e26f0d4eaab742f4f31}{}\label{classbiblio_1_1Reference_acc2a2075747a2e26f0d4eaab742f4f31}
+
+
+Assigneur de titre. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+identifiant Une lecture de l\textquotesingle{}identifiant 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Reference_8h}{Reference.\+h}\item 
+\hyperlink{Reference_8cpp}{Reference.\+cpp}\end{DoxyCompactItemize}

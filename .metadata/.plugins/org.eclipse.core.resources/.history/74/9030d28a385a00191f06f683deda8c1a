@@ -1,0 +1,20 @@
+/*
+ * Bibliographie.cpp
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#include "Bibliographie.h"
+#include "Reference.h"
+
+using namespace std;
+using namespace biblio;
+
+
+
+Bibliographie::~Bibliographie()
+{
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,87 @@
+/*
+ * Ouvrage.cpp
+ *
+ *  Created on: 2019-03-31
+ *      Author: etudiant
+ */
+
+#include "Ouvrage.h"
+#include <sstream>
+#include "ContratException.h"
+#include "Reference.h"
+
+
+using namespace std;
+using namespace util;
+
+namespace biblio{
+
+/**
+ * \brief Constructeur qui crée un objet Ouvrage
+ * \pre p_editeur doit être dans un format valide
+ * \pre p_ville doit être dans un format valide
+ * \post m_editeur doit être égal à p_editeur
+ * \post m_ville doit être égal à p_ville
+ * @param p_editeur
+ * @param p_ville
+ * \return un objet Ouvrage
+ */
+Ouvrage::Ouvrage(string p_auteurs, string p_titre, string p_editeur, string p_ville, int p_annee, string p_identifiant):Reference(p_auteurs, p_titre, p_annee, p_identifiant), m_editeur(p_editeur), m_ville(p_ville)
+{
+	PRECONDITION(validerFormatNom(p_editeur));
+	PRECONDITION(validerFormatNom(p_ville));
+	PRECONDITION(util::validerCodeIsbn(p_identifiant));
+	POSTCONDITION(m_editeur == p_editeur);
+	POSTCONDITION(m_ville == p_ville);
+	INVARIANTS();
+}
+/**
+ * \brief Accessseur pour l'éditeur
+ * @return m_editeur L'éditeur de la classe Ouvrage
+ */
+
+const string& Ouvrage::reqEditeur() const
+{
+		return m_editeur;
+}
+
+/**
+ * \brief Accessseur pour la ville
+ * @return m_ville La ville de la classe Ouvrage
+ */
+
+const string& Ouvrage::reqVille() const
+{
+	return m_ville;
+}
+/**
+ * \brief Une méthode pour formater un objet Ouvrage
+ * @return os.str() Un objet Ouvrage formaté
+ */
+
+std::string Ouvrage::reqReferenceFormate(){
+	std::ostringstream os;
+	os << Reference::reqReferenceFormate() << " " << m_ville << " : " <<
+			m_editeur << ", " << Reference::reqAnnee() << ". " << Reference::reqIdentifiant() << ".";
+	return os.str();
+}
+/**
+ * \brief Une méthode qui vérifie les invariants de la classe
+ */
+
+void Ouvrage::verifieInvariant() const{
+	INVARIANT(util::validerFormatNom(m_editeur));
+	INVARIANT(util::validerFormatNom(m_ville));
+	INVARIANT(util::validerCodeIsbn(Ouvrage::reqIdentifiant()));
+}
+
+Reference* Ouvrage::clone() const{
+	return new Ouvrage(*this);
+}
+
+
+
+Ouvrage::~Ouvrage()
+{
+}
+}

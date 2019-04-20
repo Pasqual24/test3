@@ -1,0 +1,119 @@
+/*
+ * Journal.cpp
+ *
+ *  Created on: 2019-03-31
+ *      Author: etudiant
+ */
+
+#include "Journal.h"
+#include "ContratException.h"
+#include <sstream>
+#include "Reference.h"
+
+using namespace std;
+
+namespace biblio{
+/**
+ * \brief Contructeur qui crée un objet Journal
+ * \pre Le journal doit avoir un nom
+ * \pre Le volume commence à 1
+ * \pre Le numéro doit être plus grand que 0
+ * \pre Le nombre de pages doit être plus grand que 0
+ * \pre L'identifiant doit être un code ISSN valide
+ * \post m_nom doit être égal à p_nom
+ * \post m_volume doit être égal à p_volume
+ * \post m_numero doit être égal à p_numero
+ * \post m_page doit être égal à p_page
+ * @param p_auteurs Le nom des auteurs
+ * @param p_titre Le titre de l'oeuvre
+ * @param p_annee L'année d'édition
+ * @param p_nom Le nom du journal
+ * @param p_volume Le volume
+ * @param p_numero Le numéro du volume
+ * @param p_page Le nombre de pages
+ * @param p_identifiant L'identifiant ISSN du journal
+ */
+
+Journal::Journal(string p_auteurs, string p_titre, int p_annee, string p_nom, int p_volume, int p_numero, int p_page, string p_identifiant) : Reference(p_auteurs, p_titre, p_annee, p_identifiant), m_nom(p_nom), m_volume(p_volume), m_numero(p_numero), m_page(p_page){
+	PRECONDITION(!p_nom.empty());
+	PRECONDITION(p_volume > 0);
+	PRECONDITION(p_numero > 0);
+	PRECONDITION(p_page > 0);
+	PRECONDITION(util::validerCodeIssn(p_identifiant));
+	POSTCONDITION(m_nom == p_nom);
+	POSTCONDITION(m_volume == p_volume);
+	POSTCONDITION(m_numero == p_numero);
+	POSTCONDITION(m_page == p_page);
+	INVARIANTS();
+}
+/**
+ * \brief Accesseur pour le nom du journal
+ * @return m_nom Le nom du journal
+ */
+
+const string& Journal::reqNom() const
+{
+		return m_nom;
+}
+/**
+ * \brief Accesseur pour le numéro du journal
+ * @return m_numero Le numéro du journal
+ */
+
+int Journal::reqNumero() const
+{
+		return m_numero;
+}
+/**
+ * \brief Accesseur pour le nombre de pages
+ * @return m_page Le nombre de pages du journal
+ */
+int Journal::reqPage() const
+{
+		return m_page;
+}
+/**
+ * \brief Accesseur pour le numéro du volume du journal
+ * @return m_volume Le numéro du volume du journal
+ */
+int Journal::reqVolume() const
+{
+		return m_volume;
+}
+/**
+ * \brief Formatteur de l'objet Journal
+ * @return
+ */
+std::string Journal::reqReferenceFormate(){
+	std::ostringstream os;
+	os << Reference::reqReferenceFormate() << " " << m_nom << ", vol. " << m_volume <<
+			", no. " << m_numero << ", pp. " << m_page << ", " << Reference::reqAnnee() << ". "
+			<< Reference::reqIdentifiant() << ".";
+	return os.str();
+
+}
+/**
+ * \brief Destructeur de Journal
+ */
+Journal::~Journal()
+{
+}
+/**
+ * \brief Clone de journal
+ * @return new Journal(*this) Un clône de journal
+ */
+Reference* Journal::clone() const
+{
+	return new Journal(*this);
+}
+/**
+ * \brief Vérificateur des invariants de journal
+ */
+void Journal::verifieInvariant() const{
+	INVARIANT(!m_nom.empty());
+	INVARIANT(m_volume > 0);
+	INVARIANT(m_numero > 0);
+	INVARIANT(m_page > 0);
+	INVARIANT(util::validerCodeIssn(Reference::reqIdentifiant()));
+}
+}

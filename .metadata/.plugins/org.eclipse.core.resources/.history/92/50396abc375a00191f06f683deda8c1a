@@ -1,0 +1,14 @@
+/*
+ * Bibliographie.cpp
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#include "Bibliographie.h"
+
+Bibliographie::~Bibliographie()
+{
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,154 @@
+/**
+ * \file gestionReference.cpp
+ * \brief Utilisation de la classe Reference pour créer une référence bibliographique
+ * \date 2019-02-22
+ * \author Guillaume St-Georges
+ */
+#include <string>
+#include "Reference.h"
+#include "Ouvrage.h"
+#include "Journal.h"
+#include "Bibliographie.h"
+#include <sstream>
+using namespace std;
+using namespace util;
+using namespace biblio;
+
+int main(){
+	string p_nombiblio;
+	string auteurs;
+	string titre;
+	string identifiant;
+	string anneeString;
+	string reponse;
+	string modification;
+	string ville;
+	string editeur;
+	int annee;
+	char buffer[255];
+	Bibliographie bibliographie(p_nombiblio);
+	cout << "Bienvenue dans l'outil de gestion de references bibliographiques" << endl;
+	cout << "================================================================" << endl;
+	cout << "-------------------------------------------------------" << endl;
+	cout << "Ajoutez un ouvrage" << endl;
+	cout << "-------------------------------------------------------" << endl;
+
+	do{
+		cout << "Entrez le nom du ou des auteurs : " << endl;
+		cin.getline(buffer, 255);
+		auteurs = buffer;
+	}while(!util::validerFormatNom(auteurs) || auteurs[0] == ' ');
+	do{
+		cout << "Rentrez le titre de l'oeuvre: " << endl;
+		cin.getline(buffer, 255);
+		titre = buffer;
+	}while(titre.empty());
+	do{
+		cout << "Entrez la ville d’édition:" << endl;
+		cin.getline(buffer, 255);
+		ville = buffer;
+	}while(!util::validerFormatNom(ville));
+
+	do{
+		cout << "Entrez l'éditeur :" << endl;
+		cin.getline(buffer, 255);
+		editeur = buffer;
+		}while(!util::validerFormatNom(editeur));
+
+	do{
+		annee = 0;
+		bool validationAnnee = true;
+		cout<<"Rentrez l'année d'édition: "<< endl;
+	    cin.getline(buffer, 255);
+	    anneeString = buffer;
+		for (unsigned int i = 0; i < anneeString.length(); i++){
+			if (!isdigit(anneeString[i])){
+				validationAnnee = false;
+			}
+			else{
+				validationAnnee = true;
+			}
+		}
+		if (validationAnnee == true){
+			istringstream(anneeString) >> annee;
+		}
+	}while(annee <= 0);
+	do{
+		cout << "Rentrez le code ISBN de la référence: " << endl;
+		cin.getline(buffer, 255);
+		identifiant = buffer;
+	}while(!util::validerCodeIsbn(identifiant));
+	Ouvrage ouvrage(auteurs, titre, editeur, ville, annee, identifiant);
+	bibliographie.ajouterReference(ouvrage);
+
+	cout << endl;
+	cout << "-------------------------------------------------------" << endl;
+	cout << "Ajoutez un ouvrage" << endl;
+	cout << "-------------------------------------------------------" << endl;
+	string auteurs1;
+	string titre1;
+	string ville1;
+	string editeur1;
+	string identifiant1;
+	string anneeString1;
+	int annee1;
+	do{
+			cout << "Entrez le nom du ou des auteurs : " << endl;
+			cin.getline(buffer, 255);
+			auteurs1 = buffer;
+		}while(!util::validerFormatNom(auteurs1) || auteurs1[0] == ' ');
+		do{
+			cout << "Rentrez le titre de l'oeuvre: " << endl;
+			cin.getline(buffer, 255);
+			titre1 = buffer;
+		}while(titre1.empty());
+		do{
+			cout << "Entrez la ville d’édition:" << endl;
+			cin.getline(buffer, 255);
+			ville1 = buffer;
+		}while(!util::validerFormatNom(ville1));
+
+		do{
+			cout << "Entrez l'éditeur :" << endl;
+			cin.getline(buffer, 255);
+			editeur1 = buffer;
+			}while(!util::validerFormatNom(editeur1));
+
+		do{
+			annee = 0;
+			bool validationAnnee = true;
+			cout<<"Rentrez l'année d'édition: "<< endl;
+		    cin.getline(buffer, 255);
+		    anneeString1 = buffer;
+			for (unsigned int i = 0; i < anneeString1.length(); i++){
+				if (!isdigit(anneeString1[i])){
+					validationAnnee = false;
+				}
+				else{
+					validationAnnee = true;
+				}
+			}
+			if (validationAnnee == true){
+				istringstream(anneeString1) >> annee1;
+			}
+		}while(annee1 <= 0);
+		do{
+			cout << "Rentrez le code ISBN de la référence: " << endl;
+			cin.getline(buffer, 255);
+			identifiant1 = buffer;
+		}while(!util::validerCodeIsbn(identifiant1));
+		Ouvrage ouvrage_1(auteurs1, titre1, editeur1, ville1, annee1, identifiant1);
+		bibliographie.ajouterReference(ouvrage_1);
+	/*cout << "Voulez-vous modifier le nom de l'auteur ? Oui ou Non ?" << endl;
+	getline(cin, reponse);
+	if(reponse == "Oui" || reponse == "oui"){
+		do{
+			cout << "Rentrez le nouveau nom: " << endl;
+			getline(cin, modification);
+			}while(!util::validerFormatNom(modification) || modification[0] == ' ');
+		reference.asgAuteurs(modification);
+		cout << reference.reqReferenceFormate() << endl;
+	}
+	*/
+	return 0;
+}

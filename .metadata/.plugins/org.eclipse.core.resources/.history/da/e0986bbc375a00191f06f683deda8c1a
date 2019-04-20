@@ -1,0 +1,17 @@
+/*
+ * Bibliographie.h
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#ifndef BIBLIOGRAPHIE_H_
+#define BIBLIOGRAPHIE_H_
+
+class Bibliographie
+{
+public:
+	virtual ~Bibliographie();
+};
+
+#endif /* BIBLIOGRAPHIE_H_ */

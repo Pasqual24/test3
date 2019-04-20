@@ -1,0 +1,157 @@
+\hypertarget{classbiblio_1_1Ouvrage}{}\section{biblio\+:\+:Ouvrage Class Reference}
+\label{classbiblio_1_1Ouvrage}\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+
+
+Classe \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}.  
+
+
+
+
+{\ttfamily \#include $<$Ouvrage.\+h$>$}
+
+
+
+Inheritance diagram for biblio\+:\+:Ouvrage\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classbiblio_1_1Ouvrage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for biblio\+:\+:Ouvrage\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classbiblio_1_1Ouvrage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbiblio_1_1Ouvrage_ac3c4cb2c73e6382eb6760297bdace9e7}{Ouvrage} (std\+::string p\+\_\+auteurs, std\+::string p\+\_\+titre, std\+::string p\+\_\+editeur, std\+::string p\+\_\+ville, int p\+\_\+annee, std\+::string p\+\_\+identifiant)
+\begin{DoxyCompactList}\small\item\em Constructeur qui crée un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Ouvrage_ae1d95d392ad151ef64dfcc7742e741df}{req\+Editeur} () const 
+\begin{DoxyCompactList}\small\item\em Accessseur pour l\textquotesingle{}éditeur. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Ouvrage_a7d376d2d74056e00dfdc38d7626575be}{req\+Ville} () const 
+\begin{DoxyCompactList}\small\item\em Accessseur pour la ville. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classbiblio_1_1Ouvrage_afe9e9c3ca248578c1799bd3bce528835}{req\+Reference\+Formate} () const 
+\begin{DoxyCompactList}\small\item\em Une méthode pour formater un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classbiblio_1_1Reference}{Reference} $\ast$ \hyperlink{classbiblio_1_1Ouvrage_a3c79215a9af35ef05d1d89ba25ae21bb}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Une méthode qui clone un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}!Ouvrage@{Ouvrage}}
+\index{Ouvrage@{Ouvrage}!biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+\subsubsection[{\texorpdfstring{Ouvrage(std\+::string p\+\_\+auteurs, std\+::string p\+\_\+titre, std\+::string p\+\_\+editeur, std\+::string p\+\_\+ville, int p\+\_\+annee, std\+::string p\+\_\+identifiant)}{Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant)}}]{\setlength{\rightskip}{0pt plus 5cm}biblio\+::\+Ouvrage\+::\+Ouvrage (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+auteurs, }
+\item[{std\+::string}]{p\+\_\+titre, }
+\item[{std\+::string}]{p\+\_\+editeur, }
+\item[{std\+::string}]{p\+\_\+ville, }
+\item[{int}]{p\+\_\+annee, }
+\item[{std\+::string}]{p\+\_\+identifiant}
+\end{DoxyParamCaption}
+)}\hypertarget{classbiblio_1_1Ouvrage_ac3c4cb2c73e6382eb6760297bdace9e7}{}\label{classbiblio_1_1Ouvrage_ac3c4cb2c73e6382eb6760297bdace9e7}
+
+
+Constructeur qui crée un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. 
+
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+editeur doit être dans un format valide 
+
+p\+\_\+ville doit être dans un format valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+editeur doit être égal à p\+\_\+editeur 
+
+m\+\_\+ville doit être égal à p\+\_\+ville 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+editeur} & \\
+\hline
+{\em p\+\_\+ville} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}!clone@{clone}}
+\index{clone@{clone}!biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+\subsubsection[{\texorpdfstring{clone() const }{clone() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reference} $\ast$ biblio\+::\+Ouvrage\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classbiblio_1_1Ouvrage_a3c79215a9af35ef05d1d89ba25ae21bb}{}\label{classbiblio_1_1Ouvrage_a3c79215a9af35ef05d1d89ba25ae21bb}
+
+
+Une méthode qui clone un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. 
+
+\begin{DoxyReturn}{Returns}
+new Ouvrage($\ast$this) Un clône de l\textquotesingle{}objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbiblio_1_1Reference}{biblio\+::\+Reference}.
+
+\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}!req\+Editeur@{req\+Editeur}}
+\index{req\+Editeur@{req\+Editeur}!biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+\subsubsection[{\texorpdfstring{req\+Editeur() const }{reqEditeur() const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& biblio\+::\+Ouvrage\+::req\+Editeur (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Ouvrage_ae1d95d392ad151ef64dfcc7742e741df}{}\label{classbiblio_1_1Ouvrage_ae1d95d392ad151ef64dfcc7742e741df}
+
+
+Accessseur pour l\textquotesingle{}éditeur. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+editeur L\textquotesingle{}éditeur de la classe \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} 
+\end{DoxyReturn}
+\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}!req\+Reference\+Formate@{req\+Reference\+Formate}}
+\index{req\+Reference\+Formate@{req\+Reference\+Formate}!biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+\subsubsection[{\texorpdfstring{req\+Reference\+Formate() const }{reqReferenceFormate() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string biblio\+::\+Ouvrage\+::req\+Reference\+Formate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classbiblio_1_1Ouvrage_afe9e9c3ca248578c1799bd3bce528835}{}\label{classbiblio_1_1Ouvrage_afe9e9c3ca248578c1799bd3bce528835}
+
+
+Une méthode pour formater un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. 
+
+\begin{DoxyReturn}{Returns}
+os.\+str() Un objet \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} formaté 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbiblio_1_1Reference_a6a1a403b66587341f89aca0e9d6c4f7a}{biblio\+::\+Reference}.
+
+\index{biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}!req\+Ville@{req\+Ville}}
+\index{req\+Ville@{req\+Ville}!biblio\+::\+Ouvrage@{biblio\+::\+Ouvrage}}
+\subsubsection[{\texorpdfstring{req\+Ville() const }{reqVille() const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& biblio\+::\+Ouvrage\+::req\+Ville (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Ouvrage_a7d376d2d74056e00dfdc38d7626575be}{}\label{classbiblio_1_1Ouvrage_a7d376d2d74056e00dfdc38d7626575be}
+
+
+Accessseur pour la ville. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+ville La ville de la classe \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Ouvrage.\+h\item 
+Ouvrage.\+cpp\end{DoxyCompactItemize}

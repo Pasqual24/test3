@@ -1,0 +1,86 @@
+\hypertarget{validationFormat_8cpp}{}\section{validation\+Format.\+cpp File Reference}
+\label{validationFormat_8cpp}\index{validation\+Format.\+cpp@{validation\+Format.\+cpp}}
+
+
+Utilisation des fonctions de validation\+Format dans la classe Reference.  
+
+
+{\ttfamily \#include \char`\"{}validation\+Format.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
+{\ttfamily \#include $<$stdexcept$>$}\\*
+Include dependency graph for validation\+Format.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{validationFormat_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{validationFormat_8cpp_ab3d93e73408df98688844f00a8cdce58}{util\+::valider\+Format\+Nom} (const std\+::string \&p\+\_\+nom)
+\item 
+bool \hyperlink{validationFormat_8cpp_a21c007029e2e42ca8c8daab00517069b}{util\+::valider\+Code\+Issn} (const std\+::string \&p\+\_\+issn)
+\item 
+bool \hyperlink{validationFormat_8cpp_a0955ea98068f9537dfb0d7fd66f10860}{util\+::valider\+Code\+Isbn} (const std\+::string \&p\+\_\+isbn)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilisation des fonctions de validation\+Format dans la classe Reference. 
+
+\begin{DoxyDate}{Date}
+2019-\/02-\/28 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Guillaume St-\/\+Georges 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{validation\+Format.\+cpp@{validation\+Format.\+cpp}!valider\+Code\+Isbn@{valider\+Code\+Isbn}}
+\index{valider\+Code\+Isbn@{valider\+Code\+Isbn}!validation\+Format.\+cpp@{validation\+Format.\+cpp}}
+\subsubsection[{\texorpdfstring{valider\+Code\+Isbn(const std\+::string \&p\+\_\+isbn)}{validerCodeIsbn(const std::string &p_isbn)}}]{\setlength{\rightskip}{0pt plus 5cm}bool util\+::valider\+Code\+Isbn (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+\_\+isbn}
+\end{DoxyParamCaption}
+)}\hypertarget{validationFormat_8cpp_file_a0955ea98068f9537dfb0d7fd66f10860}{}\label{validationFormat_8cpp_file_a0955ea98068f9537dfb0d7fd66f10860}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+isbn} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False La validité du code I\+S\+BN 
+\end{DoxyReturn}
+\index{validation\+Format.\+cpp@{validation\+Format.\+cpp}!valider\+Code\+Issn@{valider\+Code\+Issn}}
+\index{valider\+Code\+Issn@{valider\+Code\+Issn}!validation\+Format.\+cpp@{validation\+Format.\+cpp}}
+\subsubsection[{\texorpdfstring{valider\+Code\+Issn(const std\+::string \&p\+\_\+issn)}{validerCodeIssn(const std::string &p_issn)}}]{\setlength{\rightskip}{0pt plus 5cm}bool util\+::valider\+Code\+Issn (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+\_\+issn}
+\end{DoxyParamCaption}
+)}\hypertarget{validationFormat_8cpp_file_a21c007029e2e42ca8c8daab00517069b}{}\label{validationFormat_8cpp_file_a21c007029e2e42ca8c8daab00517069b}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+issn} & Le code I\+S\+SN \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False La validité du code I\+S\+SN 
+\end{DoxyReturn}
+\index{validation\+Format.\+cpp@{validation\+Format.\+cpp}!valider\+Format\+Nom@{valider\+Format\+Nom}}
+\index{valider\+Format\+Nom@{valider\+Format\+Nom}!validation\+Format.\+cpp@{validation\+Format.\+cpp}}
+\subsubsection[{\texorpdfstring{valider\+Format\+Nom(const std\+::string \&p\+\_\+nom)}{validerFormatNom(const std::string &p_nom)}}]{\setlength{\rightskip}{0pt plus 5cm}bool util\+::valider\+Format\+Nom (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{p\+\_\+nom}
+\end{DoxyParamCaption}
+)}\hypertarget{validationFormat_8cpp_file_ab3d93e73408df98688844f00a8cdce58}{}\label{validationFormat_8cpp_file_ab3d93e73408df98688844f00a8cdce58}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+nom} & Nom d\textquotesingle{}un nom \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False La validité du format du nom 
+\end{DoxyReturn}

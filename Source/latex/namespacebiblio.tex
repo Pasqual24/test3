@@ -1,0 +1,55 @@
+\hypertarget{namespacebiblio}{}\section{biblio Namespace Reference}
+\label{namespacebiblio}\index{biblio@{biblio}}
+
+
+Constructeur qui crée un objet reference.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}
+\begin{DoxyCompactList}\small\item\em Classe \hyperlink{classbiblio_1_1Bibliographie}{Bibliographie}. \end{DoxyCompactList}\item 
+class \hyperlink{classbiblio_1_1Journal}{Journal}
+\item 
+class \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}
+\begin{DoxyCompactList}\small\item\em Classe \hyperlink{classbiblio_1_1Ouvrage}{Ouvrage}. \end{DoxyCompactList}\item 
+class \hyperlink{classbiblio_1_1Reference}{Reference}
+\begin{DoxyCompactList}\small\item\em Classe \hyperlink{classbiblio_1_1Reference}{Reference} permettant de modéliser les objets reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constructeur qui crée un objet reference. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+\_\+auteurs} & Le/les noms des auteurs \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+titre} & Le titre de l\textquotesingle{}oeuvre \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+annee} & L\textquotesingle{}année de référence de l\textquotesingle{}oeuvre \\
+\hline
+\mbox{\tt in}  & {\em p\+\_\+identifiant} & Le code de référence de l\textquotesingle{}oeuvre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+auteurs doit être valide selon la fonction valider\+Format\+Nom 
+
+p\+\_\+titre ne doit pas être vide 
+
+p\+\_\+annee doit être strictement supérieur à 0 
+
+p\+\_\+identifiant doit être un code I\+S\+SN ou I\+S\+BN valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+auteurs doit être égale à p\+\_\+auteurs 
+
+m\+\_\+titre doit être égal à p\+\_\+titre 
+
+m\+\_\+annee doit être égal à p\+\_\+annee 
+
+m\+\_\+identifiant doit être égal à p\+\_\+identifiant 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Un objet reference 
+\end{DoxyReturn}

@@ -1,0 +1,20 @@
+/*
+ * Bibliographie.h
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#ifndef BIBLIOGRAPHIE_H_
+#define BIBLIOGRAPHIE_H_
+
+#include "Reference.h"
+
+class Bibliographie
+{
+public:
+	virtual ~Bibliographie();
+	std::vector<Reference*> m_vReferences;
+};
+
+#endif /* BIBLIOGRAPHIE_H_ */

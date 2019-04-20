@@ -1,0 +1,201 @@
+\hypertarget{classbiblio_1_1Journal}{}\section{biblio\+:\+:Journal Class Reference}
+\label{classbiblio_1_1Journal}\index{biblio\+::\+Journal@{biblio\+::\+Journal}}
+
+
+Inheritance diagram for biblio\+:\+:Journal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classbiblio_1_1Journal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for biblio\+:\+:Journal\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classbiblio_1_1Journal__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classbiblio_1_1Journal_a0cb817e268b129cb1732ad8c4c2a9ccb}{$\sim$\+Journal} ()\hypertarget{classbiblio_1_1Journal_a0cb817e268b129cb1732ad8c4c2a9ccb}{}\label{classbiblio_1_1Journal_a0cb817e268b129cb1732ad8c4c2a9ccb}
+
+\begin{DoxyCompactList}\small\item\em Destructeur de \hyperlink{classbiblio_1_1Journal}{Journal}. \end{DoxyCompactList}\item 
+\hyperlink{classbiblio_1_1Journal_a83f03a7808ad679bdcaff8382c2ce718}{Journal} (std\+::string p\+\_\+auteurs, std\+::string p\+\_\+titre, int p\+\_\+annee, std\+::string p\+\_\+nom, int p\+\_\+volume, int p\+\_\+numero, int p\+\_\+page, std\+::string p\+\_\+identifiant)
+\begin{DoxyCompactList}\small\item\em Contructeur qui crée un objet \hyperlink{classbiblio_1_1Journal}{Journal}. \end{DoxyCompactList}\item 
+const std\+::string \& \hyperlink{classbiblio_1_1Journal_a224c3798a810bf334a47d3da1d58e42d}{req\+Nom} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nom du journal. \end{DoxyCompactList}\item 
+int \hyperlink{classbiblio_1_1Journal_ab56f3828f03efefd102da330e3a0e543}{req\+Numero} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro du journal. \end{DoxyCompactList}\item 
+int \hyperlink{classbiblio_1_1Journal_a7ed8914d6af79adf1d973665c544ea7d}{req\+Page} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nombre de pages. \end{DoxyCompactList}\item 
+int \hyperlink{classbiblio_1_1Journal_a3a2d883971b4cc88754d20498f64a968}{req\+Volume} () const 
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro du volume du journal. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classbiblio_1_1Journal_adb6c2688745a6a94fe62352b041def94}{req\+Reference\+Formate} () const 
+\begin{DoxyCompactList}\small\item\em Formatteur de l\textquotesingle{}objet \hyperlink{classbiblio_1_1Journal}{Journal}. \end{DoxyCompactList}\item 
+virtual \hyperlink{classbiblio_1_1Reference}{Reference} $\ast$ \hyperlink{classbiblio_1_1Journal_a74820672c820146f6b54a49ea0731958}{clone} () const 
+\begin{DoxyCompactList}\small\item\em Clone de journal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!Journal@{Journal}}
+\index{Journal@{Journal}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{Journal(std\+::string p\+\_\+auteurs, std\+::string p\+\_\+titre, int p\+\_\+annee, std\+::string p\+\_\+nom, int p\+\_\+volume, int p\+\_\+numero, int p\+\_\+page, std\+::string p\+\_\+identifiant)}{Journal(std::string p_auteurs, std::string p_titre, int p_annee, std::string p_nom, int p_volume, int p_numero, int p_page, std::string p_identifiant)}}]{\setlength{\rightskip}{0pt plus 5cm}Journal\+::\+Journal (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{p\+\_\+auteurs, }
+\item[{std\+::string}]{p\+\_\+titre, }
+\item[{int}]{p\+\_\+annee, }
+\item[{std\+::string}]{p\+\_\+nom, }
+\item[{int}]{p\+\_\+volume, }
+\item[{int}]{p\+\_\+numero, }
+\item[{int}]{p\+\_\+page, }
+\item[{std\+::string}]{p\+\_\+identifiant}
+\end{DoxyParamCaption}
+)}\hypertarget{classbiblio_1_1Journal_a83f03a7808ad679bdcaff8382c2ce718}{}\label{classbiblio_1_1Journal_a83f03a7808ad679bdcaff8382c2ce718}
+
+
+Contructeur qui crée un objet \hyperlink{classbiblio_1_1Journal}{Journal}. 
+
+\begin{DoxyPrecond}{Precondition}
+Le journal doit avoir un nom 
+
+Le volume commence à 1 
+
+Le numéro doit être plus grand que 0 
+
+Le nombre de pages doit être plus grand que 0 
+
+L\textquotesingle{}identifiant doit être un code I\+S\+SN valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+nom doit être égal à p\+\_\+nom 
+
+m\+\_\+volume doit être égal à p\+\_\+volume 
+
+m\+\_\+numero doit être égal à p\+\_\+numero 
+
+m\+\_\+page doit être égal à p\+\_\+page 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+auteurs} & Le nom des auteurs \\
+\hline
+{\em p\+\_\+titre} & Le titre de l\textquotesingle{}oeuvre \\
+\hline
+{\em p\+\_\+annee} & L\textquotesingle{}année d\textquotesingle{}édition \\
+\hline
+{\em p\+\_\+nom} & Le nom du journal \\
+\hline
+{\em p\+\_\+volume} & Le volume \\
+\hline
+{\em p\+\_\+numero} & Le numéro du volume \\
+\hline
+{\em p\+\_\+page} & Le nombre de pages \\
+\hline
+{\em p\+\_\+identifiant} & L\textquotesingle{}identifiant I\+S\+SN du journal \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!clone@{clone}}
+\index{clone@{clone}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{clone() const }{clone() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reference} $\ast$ Journal\+::clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classbiblio_1_1Journal_a74820672c820146f6b54a49ea0731958}{}\label{classbiblio_1_1Journal_a74820672c820146f6b54a49ea0731958}
+
+
+Clone de journal. 
+
+\begin{DoxyReturn}{Returns}
+new \hyperlink{classJournal}{Journal($\ast$this)} Un clône de journal 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbiblio_1_1Reference}{biblio\+::\+Reference}.
+
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!req\+Nom@{req\+Nom}}
+\index{req\+Nom@{req\+Nom}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{req\+Nom() const }{reqNom() const }}]{\setlength{\rightskip}{0pt plus 5cm}const string \& Journal\+::req\+Nom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Journal_a224c3798a810bf334a47d3da1d58e42d}{}\label{classbiblio_1_1Journal_a224c3798a810bf334a47d3da1d58e42d}
+
+
+Accesseur pour le nom du journal. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+nom Le nom du journal 
+\end{DoxyReturn}
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!req\+Numero@{req\+Numero}}
+\index{req\+Numero@{req\+Numero}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{req\+Numero() const }{reqNumero() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Journal\+::req\+Numero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Journal_ab56f3828f03efefd102da330e3a0e543}{}\label{classbiblio_1_1Journal_ab56f3828f03efefd102da330e3a0e543}
+
+
+Accesseur pour le numéro du journal. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+numero Le numéro du journal 
+\end{DoxyReturn}
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!req\+Page@{req\+Page}}
+\index{req\+Page@{req\+Page}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{req\+Page() const }{reqPage() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Journal\+::req\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Journal_a7ed8914d6af79adf1d973665c544ea7d}{}\label{classbiblio_1_1Journal_a7ed8914d6af79adf1d973665c544ea7d}
+
+
+Accesseur pour le nombre de pages. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+page Le nombre de pages du journal 
+\end{DoxyReturn}
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!req\+Reference\+Formate@{req\+Reference\+Formate}}
+\index{req\+Reference\+Formate@{req\+Reference\+Formate}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{req\+Reference\+Formate() const }{reqReferenceFormate() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Journal\+::req\+Reference\+Formate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classbiblio_1_1Journal_adb6c2688745a6a94fe62352b041def94}{}\label{classbiblio_1_1Journal_adb6c2688745a6a94fe62352b041def94}
+
+
+Formatteur de l\textquotesingle{}objet \hyperlink{classbiblio_1_1Journal}{Journal}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classbiblio_1_1Reference_a6a1a403b66587341f89aca0e9d6c4f7a}{biblio\+::\+Reference}.
+
+\index{biblio\+::\+Journal@{biblio\+::\+Journal}!req\+Volume@{req\+Volume}}
+\index{req\+Volume@{req\+Volume}!biblio\+::\+Journal@{biblio\+::\+Journal}}
+\subsubsection[{\texorpdfstring{req\+Volume() const }{reqVolume() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Journal\+::req\+Volume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classbiblio_1_1Journal_a3a2d883971b4cc88754d20498f64a968}{}\label{classbiblio_1_1Journal_a3a2d883971b4cc88754d20498f64a968}
+
+
+Accesseur pour le numéro du volume du journal. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+volume Le numéro du volume du journal 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Journal.\+h\item 
+Journal.\+cpp\end{DoxyCompactItemize}

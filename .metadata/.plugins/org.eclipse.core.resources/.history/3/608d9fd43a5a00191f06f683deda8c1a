@@ -1,0 +1,32 @@
+/*
+ * Bibliographie.h
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#ifndef BIBLIOGRAPHIE_H_
+#define BIBLIOGRAPHIE_H_
+
+#include "Reference.h"
+#include "Bibliographie.h"
+#include <string>
+#include <sstream>
+#include <vector>
+
+class Bibliographie
+{
+public:
+	~Bibliographie()=0;
+	Bibliographie(std::string p_nom);
+	void ajouterReference (const Reference& p_nouvelleReference);
+	std::string reqBibliographieFormate();
+private:
+
+	bool referenceEstDejaPresente(const std::string& p_identifiant) const;
+	std::string m_nom;
+	std::vector<Reference*> m_vReferences;
+
+};
+
+#endif /* BIBLIOGRAPHIE_H_ */

@@ -1,0 +1,72 @@
+/**
+ * \file gestionReference.cpp
+ * \brief Utilisation de la classe Reference pour créer une référence bibliographique
+ * \date 2019-02-22
+ * \author Guillaume St-Georges
+ */
+#include <string>
+#include "Reference.h"
+#include <sstream>
+using namespace std;
+using namespace util;
+using namespace biblio;
+
+int main(){
+	string auteurs;
+	string titre;
+	string identifiant;
+	string anneeString;
+	string reponse;
+	string modification;
+	int annee;
+	char buffer[255];
+	do{
+		cout << "Rentrez le/s nom du/des auteurs: " << endl;
+		cin.getline(buffer, 255);
+		auteurs = buffer;
+	}while(!util::validerFormatNom(auteurs) || auteurs[0] == ' ');
+	do{
+		cout << "Rentrez le titre de l'oeuvre: " << endl;
+		cin.getline(buffer, 255);
+		titre = buffer;
+	}while(titre.empty());
+	do{
+		annee = 0;
+		bool validationAnnee = true;
+		cout<<"Rentrez l'année d'édition de la référence: "<< endl;
+	    cin.getline(buffer, 255);
+	    anneeString = buffer;
+		for (unsigned int i = 0; i < anneeString.length(); i++){
+			if (!isdigit(anneeString[i])){
+				validationAnnee = false;
+			}
+			else{
+				validationAnnee = true;
+			}
+		}
+		if (validationAnnee == true){
+			istringstream(anneeString) >> annee;
+		}
+	}while(annee <= 0);
+
+
+	do{
+		cout << "Rentrez le code ISSN ou ISBN de la référence: " << endl;
+		cin.getline(buffer, 255);
+		identifiant = buffer;
+	}while(not (util::validerCodeIsbn(identifiant) || util::validerCodeIssn(identifiant)));
+	Reference reference = Reference(auteurs, titre, annee, identifiant);
+	cout << reference.reqReferenceFormate() << endl;
+
+	cout << "Voulez-vous modifier le nom de l'auteur ? Oui ou Non ?" << endl;
+	getline(cin, reponse);
+	if(reponse == "Oui" || reponse == "oui"){
+		do{
+			cout << "Rentrez le nouveau nom: " << endl;
+			getline(cin, modification);
+			}while(!util::validerFormatNom(modification) || modification[0] == ' ');
+		reference.asgAuteurs(modification);
+		cout << reference.reqReferenceFormate() << endl;
+	}
+	return 0;
+}

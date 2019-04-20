@@ -1,0 +1,36 @@
+/*
+ * Bibliographie.cpp
+ *
+ *  Created on: 2019-04-08
+ *      Author: etudiant
+ */
+
+#include "Bibliographie.h"
+#include "Reference.h"
+#include <string>
+#include <sstream>
+#include <vector>
+
+
+using namespace std;
+using namespace biblio;
+
+std::vector<Reference*> m_vReferences{
+
+}
+
+
+void ajouterReference (const Reference& p_nouvelleReference){
+
+}
+
+
+string Bibliographie::reqBibliographieFormate(){
+	return 0;
+}
+
+Bibliographie::~Bibliographie()
+{
+	// TODO Auto-generated destructor stub
+}
+
