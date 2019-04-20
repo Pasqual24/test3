@@ -1,0 +1,83 @@
+/********************************************************************************
+** Form generated from reading UI file 'gestionbibliographiegui.ui'
+**
+** Created by: Qt User Interface Compiler version 4.8.7
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_GESTIONBIBLIOGRAPHIEGUI_H
+#define UI_GESTIONBIBLIOGRAPHIEGUI_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QHeaderView>
+#include <QtGui/QMainWindow>
+#include <QtGui/QMenuBar>
+#include <QtGui/QPushButton>
+#include <QtGui/QWidget>
+#include "Bibliographie.h"
+
+QT_BEGIN_NAMESPACE
+
+class Ui_GestionBibliographieGUIClass
+{
+public:
+    QWidget *centralwidget;
+    QPushButton *butt1;
+    QPushButton *pushButton;
+    QPushButton *btnAfficher;
+    QPushButton *btnQuitter;
+    QMenuBar *menubar;
+
+    void setupUi(QMainWindow *GestionBibliographieGUIClass)
+    {
+        if (GestionBibliographieGUIClass->objectName().isEmpty())
+            GestionBibliographieGUIClass->setObjectName(QString::fromUtf8("GestionBibliographieGUIClass"));
+        GestionBibliographieGUIClass->resize(492, 234);
+        centralwidget = new QWidget(GestionBibliographieGUIClass);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        butt1 = new QPushButton(centralwidget);
+        butt1->setObjectName(QString::fromUtf8("butt1"));
+        butt1->setGeometry(QRect(120, 20, 221, 31));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(120, 60, 221, 28));
+        btnAfficher = new QPushButton(centralwidget);
+        btnAfficher->setObjectName(QString::fromUtf8("btnAfficher"));
+        btnAfficher->setGeometry(QRect(120, 100, 221, 28));
+        btnQuitter = new QPushButton(centralwidget);
+        btnQuitter->setObjectName(QString::fromUtf8("btnQuitter"));
+        btnQuitter->setGeometry(QRect(120, 140, 221, 28));
+        GestionBibliographieGUIClass->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(GestionBibliographieGUIClass);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 492, 25));
+        GestionBibliographieGUIClass->setMenuBar(menubar);
+
+        retranslateUi(GestionBibliographieGUIClass);
+        QObject::connect(btnQuitter, SIGNAL(clicked()), GestionBibliographieGUIClass, SLOT(close()));
+
+        QMetaObject::connectSlotsByName(GestionBibliographieGUIClass);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *GestionBibliographieGUIClass)
+    {
+        GestionBibliographieGUIClass->setWindowTitle(QApplication::translate("GestionBibliographieGUIClass", "MainWindow", 0, QApplication::UnicodeUTF8));
+        butt1->setText(QApplication::translate("GestionBibliographieGUIClass", "Ajouter une r\303\251f\303\251rence (2 possibilit\303\251s)", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("GestionBibliographieGUIClass", "Supprimer une r\303\251f\303\251rence", 0, QApplication::UnicodeUTF8));
+        btnAfficher->setText(QApplication::translate("GestionBibliographieGUIClass", "Afficher la bibliographie", 0, QApplication::UnicodeUTF8));
+        btnQuitter->setText(QApplication::translate("GestionBibliographieGUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class GestionBibliographieGUIClass: public Ui_GestionBibliographieGUIClass {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_GESTIONBIBLIOGRAPHIEGUI_H

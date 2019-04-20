@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>517</width>
+    <height>307</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,11 +19,36 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>517</width>
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionAjouter_reference"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuMenu"/>
   </widget>
+  <action name="actionAjouter_reference">
+   <property name="text">
+    <string>Ajouter référence</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

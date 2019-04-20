@@ -1,10 +1,14 @@
 TEMPLATE = app
-TARGET = GestionBibliographieGUI 
-
-QT        += core gui 
-
-HEADERS   += gestionbibliographiegui.h
-SOURCES   += main.cpp \
+TARGET = GestionBibliographieGUI
+QT += core \
+    gui
+HEADERS += referenceqt.h \
+    gestionbibliographiegui.h
+SOURCES += referenceqt.cpp \
+    main.cpp \
     gestionbibliographiegui.cpp
-FORMS     += gestionbibliographiegui.ui    
-RESOURCES +=
+FORMS += referenceqt.ui \
+    gestionbibliographiegui.ui
+RESOURCES += 
+LIBS += "../Source/Debug/libSource.a"
+INCLUDEPATH += "../Source/."

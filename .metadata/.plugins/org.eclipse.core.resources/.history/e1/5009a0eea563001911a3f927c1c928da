@@ -1,0 +1,13 @@
+#include "gestionbibliographiegui.h"
+
+GestionBibliographieGUI::GestionBibliographieGUI(QWidget *parent)
+    : QMainWindow(parent)
+{
+	ui.setupUi(this);
+	QObject::connect(ui.actionAjouter_reference, SIGNAL(triggered()), this, SLOT());
+}
+
+GestionBibliographieGUI::~GestionBibliographieGUI()
+{
+
+}

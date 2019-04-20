@@ -11,6 +11,8 @@
 #include <sstream>
 #include <vector>
 #include "ContratException.h"
+#include "ReferenceException.h"
+//#include <QMessageBox>
 
 using namespace std;
 using namespace biblio;
@@ -37,19 +39,18 @@ const string& Bibliographie::reqNombiblio() const
  */
 void Bibliographie::ajouterReference(const Reference& p_nouvelleReference)
 {
-	/*try{
-		if(Bibliographie::referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant())
+	try{
+		if(Bibliographie::referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant()))
+		{
+			cout << "DÉJÀ PRÉSENTE"	 << endl;
 			throw ReferenceDejaPresenteException("OYEHA");
-
+		}
 		m_vReferences.push_back(p_nouvelleReference.clone());
-
 	}
-	catch ()
+	catch (ReferenceException& e)
 	{
-
+		cout << "DÉJÀ PRÉSENTE"	 << endl;
 	}
-*/
-
 
 }
 /**
