@@ -37,10 +37,20 @@ const string& Bibliographie::reqNombiblio() const
  */
 void Bibliographie::ajouterReference(const Reference& p_nouvelleReference)
 {
-	if(!Bibliographie::referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant())){
+	/*try{
+		if(Bibliographie::referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant())
+			throw ReferenceDejaPresenteException("OYEHA");
+
 		m_vReferences.push_back(p_nouvelleReference.clone());
 
 	}
+	catch ()
+	{
+
+	}
+*/
+
+
 }
 /**
  * \brief Méthode qui vérifie si la nouvelle référence est déjà dans le vecteur.

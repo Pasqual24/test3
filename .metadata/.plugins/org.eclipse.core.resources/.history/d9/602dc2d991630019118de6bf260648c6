@@ -1,0 +1,34 @@
+/*
+ * ReferenceException.h
+ *
+ *  Created on: 2019-04-20
+ *      Author: etudiant
+ */
+
+#ifndef REFERENCEEXCEPTION_H_
+#define REFERENCEEXCEPTION_H_
+
+
+//dis moi quoi écrire
+
+
+#include <stdexcept>
+
+class EmployeException : public std::runtime_error{
+public:
+	EmployeException(const std::string& p_raison): std::runtime_error(p_raison){}
+};
+
+class EmployeDejaPresentException: public EmployeException{
+public:
+	EmployeDejaPresentException(const std::string& p_raison): EmployeException(p_raison){}
+};
+
+class EmployeNonPresentException: public EmployeException{
+public:
+	EmployeNonPresentException(const std::string& p_raison): EmployeException(p_raison){}
+};
+
+
+
+#endif /* REFERENCEEXCEPTION_H_ */

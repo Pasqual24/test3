@@ -43,7 +43,7 @@ all: utilisateur
 utilisateur: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/etudiant/Bureau/TP3/Source/Debug" -o "utilisateur" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L"/home/etudiant/Bureau/tp4/Source/Debug" -o "utilisateur" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
