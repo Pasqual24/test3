@@ -1,1021 +1,390 @@
-15:28:20 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-12:42:56 **** Build of configuration Debug for project testeur ****
+18:09:46 **** Incremental Build of configuration Debug for project Source ****
 make all 
 Cannot run program "make": Unknown reason
-12:43:40 **** Build of configuration Debug for project Source ****
+18:09:46 **** Incremental Build of configuration Debug for project testeur ****
 make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-Finished building: ../Bibliographie.cpp
- 
-Building file: ../Journal.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
-Finished building: ../Journal.cpp
- 
-Building file: ../Ouvrage.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
-Finished building: ../Ouvrage.cpp
- 
-Building file: ../Reference.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
-Finished building: ../Reference.cpp
- 
-Building file: ../validationFormat.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
-../validationFormat.cpp: In function ‘bool util::validerCodeIssn(const string&)’:
-../validationFormat.cpp:71:2: warning: control reaches end of non-void function [-Wreturn-type]
-  }
+Cannot run program "make": Unknown reason
+18:09:46 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+Cannot run program "make": Unknown reason
+18:09:46 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+Cannot run program "make": Unknown reason
+18:09:48 **** Incremental Build of configuration Debug for project Source ****
+make all 
+Cannot run program "make": Unknown reason
+18:09:48 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+Cannot run program "make": Unknown reason
+18:09:48 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+Cannot run program "make": Unknown reason
+18:09:49 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+Cannot run program "make": Unknown reason
+18:11:31 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+18:11:32 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+18:11:32 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+18:11:33 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionReferenceGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic afficherbibliographieqt.ui -o ui_afficherbibliographieqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/afficherbibliographieqt.o afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. afficherbibliographieqt.h -o debug/moc_afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_afficherbibliographieqt.o debug/moc_afficherbibliographieqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionreferencegui.h -o debug/moc_gestionreferencegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionreferencegui.o debug/moc_gestionreferencegui.cpp
+g++  -o GestionReferenceGUI debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:11:42 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+18:11:42 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+18:11:42 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+18:11:42 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:17:23 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+18:17:23 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+18:17:24 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+18:17:24 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionReferenceGUI.pro
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerreferenceqt.ui -o ui_supprimerreferenceqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic afficherbibliographieqt.ui -o ui_afficherbibliographieqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournalqt.ui -o ui_ajouterjournalqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterouvrageqt.ui -o ui_ajouterouvrageqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/supprimerreferenceqt.o supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/afficherbibliographieqt.o afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournalqt.o ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+gestionreferencegui.cpp: In member function ‘void GestionReferenceGUI::supprimerReference()’:
+gestionreferencegui.cpp:37:2: error: ‘supprimerReferenceQt’ was not declared in this scope
+  supprimerReferenceQt srqt;
   ^
-../validationFormat.cpp: In function ‘bool util::validerCodeIsbn(const string&)’:
-../validationFormat.cpp:134:2: warning: control reaches end of non-void function [-Wreturn-type]
-  }
+gestionreferencegui.cpp:38:2: error: ‘srqt’ was not declared in this scope
+  srqt.exec();
   ^
-Finished building: ../validationFormat.cpp
- 
-Building target: libSource.a
-Invoking: GCC Archiver
-ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
-Finished building target: libSource.a
- 
-12:43:43 **** Build of configuration Debug for project testeur ****
-make all 
-Building file: ../Journal_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal_Testeur.d" -MT"Journal_Testeur.o" -o "Journal_Testeur.o" "../Journal_Testeur.cpp"
-Finished building: ../Journal_Testeur.cpp
- 
-Building file: ../Ouvrage_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage_Testeur.d" -MT"Ouvrage_Testeur.o" -o "Ouvrage_Testeur.o" "../Ouvrage_Testeur.cpp"
-Finished building: ../Ouvrage_Testeur.cpp
- 
-Building file: ../Reference_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference_Testeur.d" -MT"Reference_Testeur.o" -o "Reference_Testeur.o" "../Reference_Testeur.cpp"
-Finished building: ../Reference_Testeur.cpp
- 
-Building target: testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/tp4/Source/Debug" -o "testeur"  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o   -lSource -lgtest_main -lgtest -lpthread
-Finished building target: testeur
- 
-12:43:54 **** Build of configuration Debug for project utilisateur ****
-make all 
-Building file: ../gestionBibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -ISource -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"gestionBibliographie.d" -MT"gestionBibliographie.o" -o "gestionBibliographie.o" "../gestionBibliographie.cpp"
-Finished building: ../gestionBibliographie.cpp
- 
-Building target: utilisateur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/tp4/Source/Debug" -o "utilisateur"  ./gestionBibliographie.o   -lSource
-Finished building target: utilisateur
- 
-12:44:03 **** Clean-only build of configuration Debug for project testeur ****
-make clean 
-rm -rf  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o  ./Bibliographie_Testeur.d ./Journal_Testeur.d ./Ouvrage_Testeur.d ./Reference_Testeur.d  testeur
- 
-12:44:03 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Building file: ../Bibliographie_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie_Testeur.d" -MT"Bibliographie_Testeur.o" -o "Bibliographie_Testeur.o" "../Bibliographie_Testeur.cpp"
-Finished building: ../Bibliographie_Testeur.cpp
- 
-Building file: ../Journal_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal_Testeur.d" -MT"Journal_Testeur.o" -o "Journal_Testeur.o" "../Journal_Testeur.cpp"
-Finished building: ../Journal_Testeur.cpp
- 
-Building file: ../Ouvrage_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage_Testeur.d" -MT"Ouvrage_Testeur.o" -o "Ouvrage_Testeur.o" "../Ouvrage_Testeur.cpp"
-Finished building: ../Ouvrage_Testeur.cpp
- 
-Building file: ../Reference_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference_Testeur.d" -MT"Reference_Testeur.o" -o "Reference_Testeur.o" "../Reference_Testeur.cpp"
-Finished building: ../Reference_Testeur.cpp
- 
-Building target: testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/tp4/Source/Debug" -o "testeur"  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o   -lSource -lgtest_main -lgtest -lpthread
-Finished building target: testeur
- 
-12:44:55 **** Clean-only build of configuration Debug for project utilisateur ****
-make clean 
-rm -rf  ./gestionBibliographie.o  ./gestionBibliographie.d  utilisateur
- 
-12:44:56 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Building file: ../gestionBibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/tp4/Source" -ISource -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"gestionBibliographie.d" -MT"gestionBibliographie.o" -o "gestionBibliographie.o" "../gestionBibliographie.cpp"
-Finished building: ../gestionBibliographie.cpp
- 
-Building target: utilisateur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/tp4/Source/Debug" -o "utilisateur"  ./gestionBibliographie.o   -lSource
-Finished building target: utilisateur
- 
-12:45:57 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-/usr/lib/i386-linux-gnu/qt4/bin/qmake -recursive CONFIG+=debug_and_release GestionBibliographieGUI.pro 
-13:41:31 **** Clean-only build of project GestionBibliographieGUI ****
-make clean 
-make -f Makefile.Release clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-rm -f release/moc_gestionbibliographiegui.cpp
-rm -f ui_gestionbibliographiegui.h
-rm -f release/main.o release/gestionbibliographiegui.o release/moc_gestionbibliographiegui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make -f Makefile.Debug clean
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-rm -f debug/moc_gestionbibliographiegui.cpp
-rm -f ui_gestionbibliographiegui.h
-rm -f debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o
-rm -f *~ core *.core
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:41:32 **** Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:42:07 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp: In member function ‘void biblio::Bibliographie::ajouterReference(const biblio::Reference&)’:
-../Bibliographie.cpp:42:4: error: expected ‘)’ before ‘throw’
-    throw ReferenceDejaPresenteException("OYEHA");
-    ^
-../Bibliographie.cpp:47:9: error: expected type-specifier before ‘)’ token
-  catch ()
-         ^
-make: *** [Bibliographie.o] Erreur 1
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-13:42:09 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-13:42:10 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-13:42:20 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-Finished building: ../Bibliographie.cpp
- 
-Building target: libSource.a
-Invoking: GCC Archiver
-ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
-ar: création de libSource.a
-Finished building target: libSource.a
- 
-13:42:22 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-13:42:22 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-13:44:58 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:45:10 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-13:45:11 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-13:45:13 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-13:45:22 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:47:00 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:47:15 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-13:47:16 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-13:47:17 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-13:56:49 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-13:57:04 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-13:57:05 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-13:57:06 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-14:12:22 **** Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-14:12:25 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-14:12:26 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-14:12:26 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:10:12 **** Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-g++: error: +: Aucun fichier ou dossier de ce type
-g++: error: ../Source/Debug/libSource.a: Aucun fichier ou dossier de ce type
-make[1]: *** [GestionBibliographieGUI] Erreur 1
+Makefile.Debug:238 : la recette pour la cible « debug/gestionreferencegui.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: *** [debug/gestionreferencegui.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
 make: *** [debug] Erreur 2
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:10:27 **** Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-make: *** [Bibliographie.o] Erreur 1
-15:10:28 **** Build of configuration Debug for project testeur ****
+18:17:59 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:10:29 **** Build of configuration Debug for project utilisateur ****
+18:17:59 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-15:10:54 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-g++: error: +: Aucun fichier ou dossier de ce type
-g++: error: ../Source/Debug/libSource.a: Aucun fichier ou dossier de ce type
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make: *** [debug] Erreur 2
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:10:56 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-15:10:57 **** Incremental Build of configuration Debug for project testeur ****
+18:17:59 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-15:10:58 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:11:54 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-make[1]: *** Suppression du fichier « debug/main.o »
-Makefile.Debug:168 : la recette pour la cible « debug/main.o » a échouée
-Makefile:50 : la recette pour la cible « debug » a échouée
-make[1]: *** [debug/main.o] Complété
-make: *** [debug] Complété
-Command canceled
-15:14:04 **** Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-g++: error: +: Aucun fichier ou dossier de ce type
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-g++: error: ../Source/Debug/libSource.a: Aucun fichier ou dossier de ce type
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-make: *** [debug] Erreur 2
-15:14:17 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-15:14:18 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:14:19 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:14:43 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-15:14:44 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:14:45 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:15:11 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-Finished building: ../Bibliographie.cpp
- 
-Building target: libSource.a
-Invoking: GCC Archiver
-ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
-ar: création de libSource.a
-Finished building target: libSource.a
- 
-15:15:13 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:15:13 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:15:24 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:23:30 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-g++: error: +: Aucun fichier ou dossier de ce type
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-make: *** [debug] Erreur 2
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:23:42 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-15:23:43 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:23:44 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:24:16 **** Incremental Build of project GestionBibliographieGUI ****
+18:17:59 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-g++: error: +: Aucun fichier ou dossier de ce type
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-g++: error: ../Source/Debug/libSource.a: Aucun fichier ou dossier de ce type
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-make: *** [debug] Erreur 2
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:24:27 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-make: *** [Bibliographie.o] Erreur 1
-15:24:29 **** Incremental Build of configuration Debug for project testeur ****
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. supprimerreferenceqt.h -o debug/moc_supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_supprimerreferenceqt.o debug/moc_supprimerreferenceqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. afficherbibliographieqt.h -o debug/moc_afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_afficherbibliographieqt.o debug/moc_afficherbibliographieqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournalqt.h -o debug/moc_ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournalqt.o debug/moc_ajouterjournalqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionreferencegui.h -o debug/moc_gestionreferencegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionreferencegui.o debug/moc_gestionreferencegui.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:18:42 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:24:29 **** Incremental Build of configuration Debug for project utilisateur ****
+18:18:42 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-15:25:14 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-../Bibliographie.cpp:15:23: fatal error: QMessageBox: Aucun fichier ou dossier de ce type
-compilation terminated.
-make: *** [Bibliographie.o] Erreur 1
-subdir.mk:33 : la recette pour la cible « Bibliographie.o » a échouée
-15:25:16 **** Incremental Build of configuration Debug for project testeur ****
+18:18:43 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-15:25:17 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:25:32 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-Finished building: ../Bibliographie.cpp
- 
-Building target: libSource.a
-Invoking: GCC Archiver
-ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
-ar: création de libSource.a
-Finished building target: libSource.a
- 
-15:25:35 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:25:36 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:25:53 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:30:34 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:30:36 **** Incremental Build of project GestionBibliographieGUI ****
+18:18:43 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
-g++: error: +: Aucun fichier ou dossier de ce type
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu + ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-Makefile.Debug:107 : la recette pour la cible « GestionBibliographieGUI » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-make: *** [debug] Erreur 2
-15:30:37 **** Incremental Build of configuration Debug for project testeur ****
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:18:45 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:30:38 **** Incremental Build of configuration Debug for project utilisateur ****
+18:18:45 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-15:32:20 **** Incremental Build of configuration Debug for project Source ****
+18:18:45 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-15:32:21 **** Incremental Build of project GestionBibliographieGUI ****
+18:18:46 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
 make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:32:24 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:32:24 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:33:31 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:33:32 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:33:33 **** Incremental Build of configuration Debug for project testeur ****
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:34:58 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:33:34 **** Incremental Build of configuration Debug for project utilisateur ****
+18:34:59 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-15:34:05 **** Incremental Build of configuration Debug for project Source ****
+18:34:59 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-15:34:06 **** Incremental Build of project GestionBibliographieGUI ****
+18:34:59 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterouvrageqt.ui -o ui_ajouterouvrageqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+18:37:32 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+18:37:32 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+18:37:32 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+18:37:33 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterouvrageqt.ui -o ui_ajouterouvrageqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:06:26 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:06:26 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:06:26 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:06:27 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournalqt.ui -o ui_ajouterjournalqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournalqt.o ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournalqt.h -o debug/moc_ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournalqt.o debug/moc_ajouterjournalqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:07:19 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:07:20 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:07:20 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:07:20 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournalqt.ui -o ui_ajouterjournalqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournalqt.o ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournalqt.h -o debug/moc_ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournalqt.o debug/moc_ajouterjournalqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:09:32 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:09:32 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:09:32 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:09:32 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournalqt.ui -o ui_ajouterjournalqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournalqt.o ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournalqt.h -o debug/moc_ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournalqt.o debug/moc_ajouterjournalqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:11:34 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:11:34 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:11:35 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:11:35 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterouvrageqt.ui -o ui_ajouterouvrageqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:13:36 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:13:37 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:13:37 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:13:37 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerreferenceqt.ui -o ui_supprimerreferenceqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/supprimerreferenceqt.o supprimerreferenceqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. supprimerreferenceqt.h -o debug/moc_supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_supprimerreferenceqt.o debug/moc_supprimerreferenceqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:14:02 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:14:02 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:14:02 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:14:02 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerreferenceqt.ui -o ui_supprimerreferenceqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/supprimerreferenceqt.o supprimerreferenceqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. supprimerreferenceqt.h -o debug/moc_supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_supprimerreferenceqt.o debug/moc_supprimerreferenceqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:15:10 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:15:10 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:15:10 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:15:11 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:34:08 **** Incremental Build of configuration Debug for project testeur ****
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:15:12 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:34:08 **** Incremental Build of configuration Debug for project utilisateur ****
+19:15:12 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-15:37:46 **** Incremental Build of configuration Debug for project Source ****
+19:15:12 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-15:37:47 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/main.o debug/gestionbibliographiegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:37:59 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:37:59 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:38:07 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:38:45 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:38:46 **** Incremental Build of project GestionBibliographieGUI ****
+19:15:13 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:39:22 **** Incremental Build of configuration Debug for project Source ****
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:16:21 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-15:39:24 **** Incremental Build of project GestionBibliographieGUI ****
+19:16:21 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:16:22 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:16:22 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerreferenceqt.ui -o ui_supprimerreferenceqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/supprimerreferenceqt.o supprimerreferenceqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. supprimerreferenceqt.h -o debug/moc_supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_supprimerreferenceqt.o debug/moc_supprimerreferenceqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+19:17:40 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+19:17:40 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+19:17:40 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+19:17:40 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:39:25 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:39:25 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:40:24 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:40:25 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-15:40:27 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:40:28 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:48:56 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:48:57 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic referenceqt.ui -o ui_referenceqt.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/referenceqt.o referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. referenceqt.h -o debug/moc_referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_referenceqt.o debug/moc_referenceqt.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-debug/moc_gestionbibliographiegui.o : Dans la fonction « GestionBibliographieGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
-Makefile.Debug:111 : la recette pour la cible « GestionBibliographieGUI » a échouée
-/home/etudiant/Bureau/tp4/GestionBibliographieGUI/debug/moc_gestionbibliographiegui.cpp:48 : référence indéfinie vers « GestionBibliographieGUI::ajoutReference() »
-collect2: error: ld returned 1 exit status
-make[1]: *** [GestionBibliographieGUI] Erreur 1
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make: *** [debug] Erreur 2
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:49:16 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:49:17 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:53:16 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:53:16 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-gestionbibliographiegui.cpp:15:6: error: ‘gestionbibliographiegui’ has not been declared
- void gestionbibliographiegui::ajoutReference(){
-      ^
-gestionbibliographiegui.cpp: In function ‘void ajoutReference()’:
-gestionbibliographiegui.cpp:16:2: error: ‘referenceqt’ was not declared in this scope
-  referenceqt rqt;
-  ^
-gestionbibliographiegui.cpp:17:2: error: ‘rqt’ was not declared in this scope
-  rqt.exec();
-  ^
-Makefile.Debug:187 : la recette pour la cible « debug/gestionbibliographiegui.o » a échouée
-make[1]: *** [debug/gestionbibliographiegui.o] Erreur 1
-make: *** [debug] Erreur 2
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:53:18 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:53:18 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-15:58:15 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-15:58:16 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-gestionbibliographiegui.cpp: In member function ‘void GestionBibliographieGUI::ajoutReference()’:
-gestionbibliographiegui.cpp:20:2: error: ‘referenceqt’ was not declared in this scope
-  referenceqt rqt;
-  ^
-gestionbibliographiegui.cpp:21:2: error: ‘rqt’ was not declared in this scope
-  rqt.exec();
-  ^
-Makefile.Debug:187 : la recette pour la cible « debug/gestionbibliographiegui.o » a échouée
-make[1]: *** [debug/gestionbibliographiegui.o] Erreur 1
-make: *** [debug] Erreur 2
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-15:58:24 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-15:58:25 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:00:37 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:00:38 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:00:47 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:00:48 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:01:33 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:01:34 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:01:35 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:01:36 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:02:09 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:02:10 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:02:12 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:02:12 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:03:31 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:03:32 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:10:54 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:10:55 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic referenceqt.ui -o ui_referenceqt.h
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/referenceqt.o referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. referenceqt.h -o debug/moc_referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_referenceqt.o debug/moc_referenceqt.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:11:14 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:11:15 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:11:51 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:11:52 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic referenceqt.ui -o ui_referenceqt.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/referenceqt.o referenceqt.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. referenceqt.h -o debug/moc_referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_referenceqt.o debug/moc_referenceqt.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/tp4/GestionBibliographieGUI »
-16:18:29 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:23:02 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-11:06:22 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Building file: ../Bibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
-Finished building: ../Bibliographie.cpp
- 
-Building file: ../ContratException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
-Finished building: ../ContratException.cpp
- 
-Building file: ../Journal.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
-Finished building: ../Journal.cpp
- 
-Building file: ../Ouvrage.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
-Finished building: ../Ouvrage.cpp
- 
-Building file: ../Reference.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
-Finished building: ../Reference.cpp
- 
-Building file: ../validationFormat.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
-../validationFormat.cpp: In function ‘bool util::validerCodeIssn(const string&)’:
-../validationFormat.cpp:71:2: warning: control reaches end of non-void function [-Wreturn-type]
-  }
-  ^
-../validationFormat.cpp: In function ‘bool util::validerCodeIsbn(const string&)’:
-../validationFormat.cpp:134:2: warning: control reaches end of non-void function [-Wreturn-type]
-  }
-  ^
-Finished building: ../validationFormat.cpp
- 
-Building target: libSource.a
-Invoking: GCC Archiver
-ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
-ar: création de libSource.a
-Finished building target: libSource.a
- 
-11:06:24 **** Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. referenceqt.h -o debug/moc_referenceqt.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_referenceqt.o debug/moc_referenceqt.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-11:06:28 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Building file: ../Bibliographie_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie_Testeur.d" -MT"Bibliographie_Testeur.o" -o "Bibliographie_Testeur.o" "../Bibliographie_Testeur.cpp"
-Finished building: ../Bibliographie_Testeur.cpp
- 
-Building file: ../Journal_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal_Testeur.d" -MT"Journal_Testeur.o" -o "Journal_Testeur.o" "../Journal_Testeur.cpp"
-Finished building: ../Journal_Testeur.cpp
- 
-Building file: ../Ouvrage_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage_Testeur.d" -MT"Ouvrage_Testeur.o" -o "Ouvrage_Testeur.o" "../Ouvrage_Testeur.cpp"
-Finished building: ../Ouvrage_Testeur.cpp
- 
-Building file: ../Reference_Testeur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference_Testeur.d" -MT"Reference_Testeur.o" -o "Reference_Testeur.o" "../Reference_Testeur.cpp"
-Finished building: ../Reference_Testeur.cpp
- 
-Building target: testeur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "testeur"  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o   -lSource -lgtest_main -lgtest -lpthread
-Finished building target: testeur
- 
-11:06:31 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Building file: ../gestionBibliographie.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -ISource -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"gestionBibliographie.d" -MT"gestionBibliographie.o" -o "gestionBibliographie.o" "../gestionBibliographie.cpp"
-Finished building: ../gestionBibliographie.cpp
- 
-Building target: utilisateur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "utilisateur"  ./gestionBibliographie.o   -lSource
-Finished building target: utilisateur
- 
-16:04:33 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:04:33 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-make[1]: rien à faire pour « first ».
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-16:04:34 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:04:34 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:09:57 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-16:09:58 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic gestionbibliographiegui.ui -o ui_gestionbibliographiegui.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-16:10:01 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-16:10:01 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-16:10:15 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-19:39:36 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-19:39:37 **** Incremental Build of project GestionBibliographieGUI ****
-make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournal.ui -o ui_ajouterjournal.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournal.o ajouterjournal.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournal.h -o debug/moc_ajouterjournal.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournal.o debug/moc_ajouterjournal.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/ajouterjournal.o debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_ajouterjournal.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-19:39:41 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-19:39:41 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »

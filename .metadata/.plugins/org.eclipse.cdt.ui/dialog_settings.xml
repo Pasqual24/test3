@@ -7,7 +7,7 @@
 		<item value="0" key="index"/>
 	</section>
 	<section name="CPathsPropertyPage">
-		<item value="4" key="pageIndex"/>
+		<item value="2" key="pageIndex"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
@@ -25,5 +25,11 @@
 		<item value="0" key="pageIndex"/>
 	</section>
 	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.includebrowser.IBViewPart">
+		<item value="false" key="showFolders"/>
+		<item value="false" key="systemFilter"/>
+		<item value="true" key="includedBy"/>
+		<item value="false" key="inactiveFilter"/>
 	</section>
 </section>

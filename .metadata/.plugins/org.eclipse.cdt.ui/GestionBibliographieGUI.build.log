@@ -1,19 +1,17 @@
-19:39:37 **** Incremental Build of project GestionBibliographieGUI ****
+15:54:24 **** Incremental Build of project GestionBibliographieGUI ****
 make debug 
-/usr/lib/i386-linux-gnu/qt4/bin/qmake CONFIG+=debug_and_release -o Makefile GestionBibliographieGUI.pro
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
-/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournal.ui -o ui_ajouterjournal.h
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournal.o ajouterjournal.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionbibliographiegui.o gestionbibliographiegui.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournal.h -o debug/moc_ajouterjournal.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournal.o debug/moc_ajouterjournal.cpp
-/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionbibliographiegui.h -o debug/moc_gestionbibliographiegui.cpp
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionbibliographiegui.o debug/moc_gestionbibliographiegui.cpp
-g++  -o GestionBibliographieGUI debug/ajouterjournal.o debug/referenceqt.o debug/main.o debug/gestionbibliographiegui.o debug/moc_ajouterjournal.o debug/moc_referenceqt.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
-{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionBibliographieGUI' && test -f GestionBibliographieGUI.gdb-index && objcopy --add-section '.gdb_index=GestionBibliographieGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionBibliographieGUI' 'GestionBibliographieGUI' && rm -f GestionBibliographieGUI.gdb-index || true
+g++  -o GestionBibliographieGUI debug/ouvragegui.o debug/main.o debug/gestionbibliographiegui.o debug/moc_ouvragegui.o debug/moc_gestionbibliographiegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+debug/moc_gestionbibliographiegui.o : Dans la fonction « GestionBibliographieGUI::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+/home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI/debug/moc_gestionbibliographiegui.cpp:50 : référence indéfinie vers « GestionBibliographieGUI::AjouterUnOuvrage() »
+/home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI/debug/moc_gestionbibliographiegui.cpp:51 : référence indéfinie vers « GestionBibliographieGUI::ajouterJournal() »
+collect2: error: ld returned 1 exit status
+Makefile.Debug:111 : la recette pour la cible « GestionBibliographieGUI » a échouée
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionBibliographieGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+make[1]: *** [GestionBibliographieGUI] Erreur 1
+make: *** [debug] Erreur 2
 
-19:39:41 Build Finished (took 3s.954ms)
+15:54:25 Build Finished (took 369ms)
 
