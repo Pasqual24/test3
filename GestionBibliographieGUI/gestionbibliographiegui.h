@@ -3,6 +3,12 @@
 
 #include <QtGui/QMainWindow>
 #include "ui_gestionbibliographiegui.h"
+#include <vector>
+#include "Reference.h"
+#include "Ouvrage.h"
+#include "Journal.h"
+#include "Bibliographie.h"
+
 
 class GestionBibliographieGUI : public QMainWindow
 {
@@ -14,6 +20,7 @@ public:
 
     private slots:
 		void AjouterUnOuvrage();
+		void ajouterJournal();
 		//ajoutEmployeComission();
 
 private:

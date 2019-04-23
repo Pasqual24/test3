@@ -27,6 +27,8 @@ public:
     QAction *actionAjouter_reference;
     QAction *actionSupprimer;
     QAction *actionQuitter;
+    QAction *actionSupprimer_r_f_rence;
+    QAction *actionAfficher_la_bibliographie;
     QWidget *centralwidget;
     QMenuBar *menubar;
     QMenu *menuMenu;
@@ -42,6 +44,10 @@ public:
         actionSupprimer->setObjectName(QString::fromUtf8("actionSupprimer"));
         actionQuitter = new QAction(GestionBibliographieGUIClass);
         actionQuitter->setObjectName(QString::fromUtf8("actionQuitter"));
+        actionSupprimer_r_f_rence = new QAction(GestionBibliographieGUIClass);
+        actionSupprimer_r_f_rence->setObjectName(QString::fromUtf8("actionSupprimer_r_f_rence"));
+        actionAfficher_la_bibliographie = new QAction(GestionBibliographieGUIClass);
+        actionAfficher_la_bibliographie->setObjectName(QString::fromUtf8("actionAfficher_la_bibliographie"));
         centralwidget = new QWidget(GestionBibliographieGUIClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         GestionBibliographieGUIClass->setCentralWidget(centralwidget);
@@ -54,7 +60,8 @@ public:
 
         menubar->addAction(menuMenu->menuAction());
         menuMenu->addAction(actionAjouter_reference);
-        menuMenu->addAction(actionSupprimer);
+        menuMenu->addAction(actionSupprimer_r_f_rence);
+        menuMenu->addAction(actionAfficher_la_bibliographie);
         menuMenu->addSeparator();
         menuMenu->addAction(actionQuitter);
 
@@ -69,6 +76,8 @@ public:
         actionAjouter_reference->setText(QApplication::translate("GestionBibliographieGUIClass", "Ajouter r\303\251f\303\251rence", 0, QApplication::UnicodeUTF8));
         actionSupprimer->setText(QApplication::translate("GestionBibliographieGUIClass", "Supprimer", 0, QApplication::UnicodeUTF8));
         actionQuitter->setText(QApplication::translate("GestionBibliographieGUIClass", "Quitter", 0, QApplication::UnicodeUTF8));
+        actionSupprimer_r_f_rence->setText(QApplication::translate("GestionBibliographieGUIClass", "Supprimer r\303\251f\303\251rence", 0, QApplication::UnicodeUTF8));
+        actionAfficher_la_bibliographie->setText(QApplication::translate("GestionBibliographieGUIClass", "Afficher la bibliographie", 0, QApplication::UnicodeUTF8));
         menuMenu->setTitle(QApplication::translate("GestionBibliographieGUIClass", "Menu", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

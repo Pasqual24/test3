@@ -22,7 +22,7 @@ static const uint qt_meta_data_GestionBibliographieGUI[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,12 +31,14 @@ static const uint qt_meta_data_GestionBibliographieGUI[] = {
 
  // slots: signature, parameters, type, tag, flags
       25,   24,   24,   24, 0x08,
+      44,   24,   24,   24, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_GestionBibliographieGUI[] = {
     "GestionBibliographieGUI\0\0AjouterUnOuvrage()\0"
+    "ajouterJournal()\0"
 };
 
 void GestionBibliographieGUI::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -46,6 +48,7 @@ void GestionBibliographieGUI::qt_static_metacall(QObject *_o, QMetaObject::Call 
         GestionBibliographieGUI *_t = static_cast<GestionBibliographieGUI *>(_o);
         switch (_id) {
         case 0: _t->AjouterUnOuvrage(); break;
+        case 1: _t->ajouterJournal(); break;
         default: ;
         }
     }
@@ -84,9 +87,9 @@ int GestionBibliographieGUI::qt_metacall(QMetaObject::Call _c, int _id, void **_
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

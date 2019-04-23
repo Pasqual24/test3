@@ -6,6 +6,7 @@ GestionBibliographieGUI::GestionBibliographieGUI(QWidget *parent)
 {
 	ui.setupUi(this);
 	QObject::connect(ui.actionAjouter_reference, SIGNAL(triggered()), this, SLOT(AjouterUnOuvrage()));
+	QObject::connect(ui.actionAjouter_reference, SIGNAL(triggered()), this, SLOT(ajouterJournal()));
 }
 
 GestionBibliographieGUI::~GestionBibliographieGUI()
@@ -19,7 +20,11 @@ GestionBibliographieGUI::~GestionBibliographieGUI()
 void GestionBibliographieGUI::AjouterUnOuvrage(){
 	ReferenceQt rqt;
 	rqt.exec();
+}
 
+void GestionBibliographieGUI::ajouterJournal(){
+	ReferenceQt jqt;
+	jqt.exec();
 }
 
 

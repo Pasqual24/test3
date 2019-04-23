@@ -28,7 +28,8 @@
      <string>Menu</string>
     </property>
     <addaction name="actionAjouter_reference"/>
-    <addaction name="actionSupprimer"/>
+    <addaction name="actionSupprimer_r_f_rence"/>
+    <addaction name="actionAfficher_la_bibliographie"/>
     <addaction name="separator"/>
     <addaction name="actionQuitter"/>
    </widget>
@@ -47,6 +48,16 @@
   <action name="actionQuitter">
    <property name="text">
     <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_r_f_rence">
+   <property name="text">
+    <string>Supprimer référence</string>
+   </property>
+  </action>
+  <action name="actionAfficher_la_bibliographie">
+   <property name="text">
+    <string>Afficher la bibliographie</string>
    </property>
   </action>
  </widget>
