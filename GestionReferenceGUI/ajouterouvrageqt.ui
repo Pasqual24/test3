@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Ajouter un journal</string>
+   <string>Ajouter un ouvrage</string>
   </property>
   <widget class="QLineEdit" name="nomAuteurOuvrage">
    <property name="geometry">

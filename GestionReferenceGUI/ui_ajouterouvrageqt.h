@@ -94,7 +94,7 @@ public:
 
     void retranslateUi(QDialog *ajouterOuvrageQtClass)
     {
-        ajouterOuvrageQtClass->setWindowTitle(QApplication::translate("ajouterOuvrageQtClass", "Ajouter un journal", 0, QApplication::UnicodeUTF8));
+        ajouterOuvrageQtClass->setWindowTitle(QApplication::translate("ajouterOuvrageQtClass", "Ajouter un ouvrage", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ajouterOuvrageQtClass", "Nom de l'auteur", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("ajouterOuvrageQtClass", "Titre de l'oeuvre", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("ajouterOuvrageQtClass", "Ville d'\303\251dition", 0, QApplication::UnicodeUTF8));

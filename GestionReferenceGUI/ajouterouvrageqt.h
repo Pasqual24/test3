@@ -19,13 +19,11 @@ public:
     std::string reqEditeur() const;
     int reqAnnee() const;
     std::string reqIdentifiant() const;
-
 private slots:
-	void enregistrerOuvrage();
+    void enregisterOuvrage();
 
 private:
     Ui::ajouterOuvrageQtClass ui;
-    biblio::Ouvrage m_ouvrage;
 };
 
 #endif // AJOUTEROUVRAGEQT_H

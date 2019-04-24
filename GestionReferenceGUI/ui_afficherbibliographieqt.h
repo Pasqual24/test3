@@ -15,18 +15,23 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QDialog>
 #include <QtGui/QHeaderView>
+#include <QtGui/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_afficherBibliographieQtClass
 {
 public:
+    QTextEdit *affichageBibliographie;
 
     void setupUi(QDialog *afficherBibliographieQtClass)
     {
         if (afficherBibliographieQtClass->objectName().isEmpty())
             afficherBibliographieQtClass->setObjectName(QString::fromUtf8("afficherBibliographieQtClass"));
         afficherBibliographieQtClass->resize(400, 300);
+        affichageBibliographie = new QTextEdit(afficherBibliographieQtClass);
+        affichageBibliographie->setObjectName(QString::fromUtf8("affichageBibliographie"));
+        affichageBibliographie->setGeometry(QRect(40, 20, 331, 261));
 
         retranslateUi(afficherBibliographieQtClass);
 

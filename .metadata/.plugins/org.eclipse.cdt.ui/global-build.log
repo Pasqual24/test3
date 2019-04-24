@@ -1,93 +1,273 @@
-20:15:00 **** Clean-only build of configuration Debug for project Source ****
-make clean 
-Cannot run program "make": Unknown reason
-20:15:00 **** Clean-only build of configuration Debug for project testeur ****
-make clean 
-Cannot run program "make": Unknown reason
-20:15:00 **** Clean-only build of configuration Debug for project utilisateur ****
-make clean 
-Cannot run program "make": Unknown reason
-20:15:00 **** Clean-only build of project GestionReferenceGUI ****
-make clean 
-Cannot run program "make": Unknown reason
-20:15:05 **** Build of configuration Debug for project Source ****
+11:12:57 **** Build of configuration Debug for project Source ****
 make all 
-Cannot run program "make": Unknown reason
-20:15:05 **** Build of configuration Debug for project testeur ****
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+../validationFormat.cpp: In function ‘bool util::validerCodeIssn(const string&)’:
+../validationFormat.cpp:71:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../validationFormat.cpp: In function ‘bool util::validerCodeIsbn(const string&)’:
+../validationFormat.cpp:134:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../validationFormat.cpp
+ 
+Building target: libSource.a
+Invoking: GCC Archiver
+ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
+ar: création de libSource.a
+Finished building target: libSource.a
+ 
+11:12:58 **** Build of configuration Debug for project testeur ****
 make all 
-Cannot run program "make": Unknown reason
-20:15:05 **** Build of configuration Debug for project utilisateur ****
+Building file: ../Bibliographie_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie_Testeur.d" -MT"Bibliographie_Testeur.o" -o "Bibliographie_Testeur.o" "../Bibliographie_Testeur.cpp"
+Finished building: ../Bibliographie_Testeur.cpp
+ 
+Building file: ../Journal_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal_Testeur.d" -MT"Journal_Testeur.o" -o "Journal_Testeur.o" "../Journal_Testeur.cpp"
+Finished building: ../Journal_Testeur.cpp
+ 
+Building file: ../Ouvrage_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage_Testeur.d" -MT"Ouvrage_Testeur.o" -o "Ouvrage_Testeur.o" "../Ouvrage_Testeur.cpp"
+Finished building: ../Ouvrage_Testeur.cpp
+ 
+Building file: ../Reference_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference_Testeur.d" -MT"Reference_Testeur.o" -o "Reference_Testeur.o" "../Reference_Testeur.cpp"
+Finished building: ../Reference_Testeur.cpp
+ 
+Building target: testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "testeur"  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o   -lSource -lgtest_main -lgtest -lpthread
+Finished building target: testeur
+ 
+11:13:02 **** Build of configuration Debug for project utilisateur ****
 make all 
-Cannot run program "make": Unknown reason
-20:15:05 **** Build of project GestionReferenceGUI ****
+Building file: ../gestionBibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -ISource -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"gestionBibliographie.d" -MT"gestionBibliographie.o" -o "gestionBibliographie.o" "../gestionBibliographie.cpp"
+Finished building: ../gestionBibliographie.cpp
+ 
+Building target: utilisateur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "utilisateur"  ./gestionBibliographie.o   -lSource
+Finished building target: utilisateur
+ 
+11:13:02 **** Build of project GestionReferenceGUI ****
 make debug 
-Cannot run program "make": Unknown reason
-20:15:33 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Cannot run program "make": Unknown reason
-20:15:33 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Cannot run program "make": Unknown reason
-20:15:33 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Cannot run program "make": Unknown reason
-20:15:33 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-Cannot run program "make": Unknown reason
-20:18:52 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:52 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:52 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:52 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-Cannot run program "make": Unknown reason
-20:18:54 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:54 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:54 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Cannot run program "make": Unknown reason
-20:18:54 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-Cannot run program "make": Unknown reason
-20:19:06 **** Incremental Build of configuration Debug for project Source ****
-make all 
-Cannot run program "make": Unknown reason
-20:19:06 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-Cannot run program "make": Unknown reason
-20:19:06 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-Cannot run program "make": Unknown reason
-20:19:06 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-Cannot run program "make": Unknown reason
-20:19:33 **** Incremental Build of configuration Debug for project Source ****
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic supprimerreferenceqt.ui -o ui_supprimerreferenceqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic afficherbibliographieqt.ui -o ui_afficherbibliographieqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterjournalqt.ui -o ui_ajouterjournalqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic ajouterouvrageqt.ui -o ui_ajouterouvrageqt.h
+/usr/lib/i386-linux-gnu/qt4/bin/uic gestionreferencegui.ui -o ui_gestionreferencegui.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/supprimerreferenceqt.o supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/afficherbibliographieqt.o afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterjournalqt.o ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/main.o main.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. supprimerreferenceqt.h -o debug/moc_supprimerreferenceqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_supprimerreferenceqt.o debug/moc_supprimerreferenceqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. afficherbibliographieqt.h -o debug/moc_afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_afficherbibliographieqt.o debug/moc_afficherbibliographieqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterjournalqt.h -o debug/moc_ajouterjournalqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterjournalqt.o debug/moc_ajouterjournalqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. gestionreferencegui.h -o debug/moc_gestionreferencegui.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_gestionreferencegui.o debug/moc_gestionreferencegui.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+debug/gestionreferencegui.o : Dans la fonction « GestionReferenceGUI::ajoutOuvrage() » :
+/home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI/gestionreferencegui.cpp:27 : référence indéfinie vers « ajouterOuvrageQt::reqAuteurs[abi:cxx11]() const »
+debug/moc_ajouterouvrageqt.o : Dans la fonction « ajouterOuvrageQt::qt_static_metacall(QObject*, QMetaObject::Call, int, void**) » :
+/home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI/debug/moc_ajouterouvrageqt.cpp:48 : référence indéfinie vers « ajouterOuvrageQt::enregistrerOuvrage() »
+collect2: error: ld returned 1 exit status
+make[1]: *** [GestionReferenceGUI] Erreur 1
+make: *** [debug] Erreur 2
+Makefile.Debug:123 : la recette pour la cible « GestionReferenceGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+Makefile:50 : la recette pour la cible « debug » a échouée
+11:14:28 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:19:34 **** Incremental Build of configuration Debug for project testeur ****
+11:14:28 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:19:34 **** Incremental Build of configuration Debug for project utilisateur ****
+11:14:29 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:19:34 **** Incremental Build of project GestionReferenceGUI ****
+11:14:29 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+Makefile.Debug:123 : la recette pour la cible « GestionReferenceGUI » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+debug/gestionreferencegui.o : Dans la fonction « GestionReferenceGUI::ajoutOuvrage() » :
+Makefile:50 : la recette pour la cible « debug » a échouée
+/home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI/gestionreferencegui.cpp:27 : référence indéfinie vers « ajouterOuvrageQt::reqAuteurs[abi:cxx11]() const »
+collect2: error: ld returned 1 exit status
+make[1]: *** [GestionReferenceGUI] Erreur 1
+make: *** [debug] Erreur 2
+11:15:26 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:15:27 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:15:27 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:15:27 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:17:20 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:17:20 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:17:21 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:17:21 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:17:22 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:17:23 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:17:23 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:17:23 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:20:34 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:20:35 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:20:35 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:20:35 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+ajouterouvrageqt.cpp: In member function ‘std::__cxx11::string ajouterOuvrageQt::reqAuteurs() const’:
+ajouterouvrageqt.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterouvrageqt.cpp: In member function ‘std::__cxx11::string ajouterOuvrageQt::reqTitre() const’:
+ajouterouvrageqt.cpp:19:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterouvrageqt.cpp: In member function ‘std::__cxx11::string ajouterOuvrageQt::reqVille() const’:
+ajouterouvrageqt.cpp:22:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterouvrageqt.cpp: In member function ‘std::__cxx11::string ajouterOuvrageQt::reqEditeur() const’:
+ajouterouvrageqt.cpp:25:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterouvrageqt.cpp: In member function ‘int ajouterOuvrageQt::reqAnnee() const’:
+ajouterouvrageqt.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+ajouterouvrageqt.cpp: In member function ‘std::__cxx11::string ajouterOuvrageQt::reqIdentifiant() const’:
+ajouterouvrageqt.cpp:31:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:25:06 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:25:07 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:25:07 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:25:07 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:29:03 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:29:03 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:29:03 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:29:04 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
 ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
+ajouterouvrageqt.cpp:4:19: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
+   : QDialog(parent)
+                   ^
 In file included from ajouterouvrageqt.h:7:0,
                  from ajouterouvrageqt.cpp:1:
 ../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
@@ -98,409 +278,227 @@ In file included from ajouterouvrageqt.h:7:0,
  class Ouvrage: public Reference
        ^
 ../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+11:29:25 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:29:26 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:29:26 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:29:26 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
+ajouterouvrageqt.cpp:4:19: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
+   : QDialog(parent)
+                   ^
+In file included from ajouterouvrageqt.h:7:0,
+                 from ajouterouvrageqt.cpp:1:
+../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
+ Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
+ ^
+../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
+../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public Reference
+       ^
+../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
+Makefile:50 : la recette pour la cible « debug » a échouée
+make: *** [debug] Erreur 2
+11:29:38 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:29:38 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:29:39 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:29:39 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+11:31:09 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:31:09 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:31:09 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:31:09 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregisterOuvrage()’:
+ajouterouvrageqt.cpp:34:92: error: ‘m_ouvrage’ was not declared in this scope
+  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
+                                                                                            ^
+make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
+Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make: *** [debug] Erreur 2
+Makefile:50 : la recette pour la cible « debug » a échouée
+11:31:51 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+11:31:52 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+11:31:52 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+11:31:52 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
+ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
+ajouterouvrageqt.cpp:4:19: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
+   : QDialog(parent)
+                   ^
+In file included from ajouterouvrageqt.h:7:0,
+                 from ajouterouvrageqt.cpp:1:
+../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
+ Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
+ ^
+../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
+../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
+ class Ouvrage: public Reference
+       ^
+../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
+ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregisterOuvrage()’:
+ajouterouvrageqt.cpp:34:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
   m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
                                                                                             ^
 Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
 make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
 make: *** [debug] Erreur 2
-20:20:16 **** Incremental Build of configuration Debug for project Source ****
+Makefile:50 : la recette pour la cible « debug » a échouée
+11:32:43 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:20:16 **** Incremental Build of configuration Debug for project testeur ****
+11:32:43 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:20:17 **** Incremental Build of configuration Debug for project utilisateur ****
+11:32:43 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:20:17 **** Incremental Build of project GestionReferenceGUI ****
+11:32:43 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
-  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-                                                                                            ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. ajouterouvrageqt.h -o debug/moc_ajouterouvrageqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_ajouterouvrageqt.o debug/moc_ajouterouvrageqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:23:35 **** Incremental Build of configuration Debug for project Source ****
+12:15:12 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:23:35 **** Incremental Build of configuration Debug for project testeur ****
+12:15:12 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:23:35 **** Incremental Build of configuration Debug for project utilisateur ****
+12:15:12 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:23:36 **** Incremental Build of project GestionReferenceGUI ****
+12:15:12 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
-  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-                                                                                            ^
-ajouterouvrageqt.cpp:34:41: error: no match for call to ‘(biblio::Ouvrage) (const char [2], const char [2], const char [2], const char [2], int, const char [2])’
-  m_ouvrage("q", "q", "q", "q", 2001, "q");
-                                         ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-make: *** [debug] Erreur 2
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-20:24:00 **** Incremental Build of configuration Debug for project Source ****
+12:32:54 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:24:00 **** Incremental Build of configuration Debug for project testeur ****
+12:32:54 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:24:00 **** Incremental Build of configuration Debug for project utilisateur ****
+12:32:55 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:24:01 **** Incremental Build of project GestionReferenceGUI ****
+12:32:55 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:34:41: error: no match for call to ‘(biblio::Ouvrage) (const char [2], const char [2], const char [2], const char [2], int, const char [2])’
-  m_ouvrage("q", "q", "q", "q", 2001, "q");
-                                         ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-make: *** [debug] Erreur 2
-20:25:33 **** Incremental Build of configuration Debug for project Source ****
+12:34:05 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:25:34 **** Incremental Build of configuration Debug for project testeur ****
+12:34:05 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:25:34 **** Incremental Build of configuration Debug for project utilisateur ****
+12:34:05 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:25:34 **** Incremental Build of project GestionReferenceGUI ****
+12:34:06 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:35:51: error: no match for call to ‘(biblio::Ouvrage) (const char [4], const char [4], const char [4], const char [4], int, const char [4])’
-  m_ouvrage("qwq", "qwq", "qqw", "qwq", 2001, "qqw");
-                                                   ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+make[1]: rien à faire pour « first ».
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:26:54 **** Incremental Build of configuration Debug for project Source ****
+12:34:52 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:26:55 **** Incremental Build of configuration Debug for project testeur ****
+12:34:52 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:26:55 **** Incremental Build of configuration Debug for project utilisateur ****
+12:34:52 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:26:55 **** Incremental Build of project GestionReferenceGUI ****
+12:34:52 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
-  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-                                                                                            ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+make[1]: rien à faire pour « first ».
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-make: *** [debug] Erreur 2
-Makefile:50 : la recette pour la cible « debug » a échouée
-20:28:29 **** Incremental Build of configuration Debug for project Source ****
+12:51:31 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-20:28:30 **** Incremental Build of configuration Debug for project testeur ****
+12:51:31 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
-20:28:30 **** Incremental Build of configuration Debug for project utilisateur ****
+12:51:32 **** Incremental Build of configuration Debug for project utilisateur ****
 make all 
 make: rien à faire pour « all ».
-20:28:30 **** Incremental Build of project GestionReferenceGUI ****
+12:51:32 **** Incremental Build of project GestionReferenceGUI ****
 make debug 
 make -f Makefile.Debug
 make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+/usr/lib/i386-linux-gnu/qt4/bin/uic afficherbibliographieqt.ui -o ui_afficherbibliographieqt.h
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/afficherbibliographieqt.o afficherbibliographieqt.cpp
 g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
-  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-                                                                                            ^
-ajouterouvrageqt.cpp:34:51: error: no match for call to ‘(biblio::Ouvrage) (const char [4], const char [4], const char [4], const char [4], int, const char [4])’
-  m_ouvrage("qwq", "qwq", "qqw", "qwq", 2001, "qqw");
-                                                   ^
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/gestionreferencegui.o gestionreferencegui.cpp
+/usr/lib/i386-linux-gnu/qt4/bin/moc -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. afficherbibliographieqt.h -o debug/moc_afficherbibliographieqt.cpp
+g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/moc_afficherbibliographieqt.o debug/moc_afficherbibliographieqt.cpp
+g++  -o GestionReferenceGUI debug/supprimerreferenceqt.o debug/afficherbibliographieqt.o debug/ajouterjournalqt.o debug/ajouterouvrageqt.o debug/main.o debug/gestionreferencegui.o debug/moc_supprimerreferenceqt.o debug/moc_afficherbibliographieqt.o debug/moc_ajouterjournalqt.o debug/moc_ajouterouvrageqt.o debug/moc_gestionreferencegui.o    -L/usr/lib/i386-linux-gnu ../Source/Debug/libSource.a -lQtGui -lQtCore -lpthread 
+{ test -n "" && DESTDIR="" || DESTDIR=.; } && test $(gdb --version | sed -e 's,[^0-9][^0-9]*\([0-9]\)\.\([0-9]\).*,\1\2,;q') -gt 72 && gdb --nx --batch --quiet -ex 'set confirm off' -ex "save gdb-index $DESTDIR" -ex quit 'GestionReferenceGUI' && test -f GestionReferenceGUI.gdb-index && objcopy --add-section '.gdb_index=GestionReferenceGUI.gdb-index' --set-section-flags '.gdb_index=readonly' 'GestionReferenceGUI' 'GestionReferenceGUI' && rm -f GestionReferenceGUI.gdb-index || true
 make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:28:42 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-20:28:43 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-20:28:43 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-20:28:43 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-ajouterouvrageqt.cpp: In member function ‘void ajouterOuvrageQt::enregistrerOuvrage()’:
-ajouterouvrageqt.cpp:33:92: error: no match for call to ‘(biblio::Ouvrage) (std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)’
-  m_ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-                                                                                            ^
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:29:24 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-20:29:24 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-20:29:25 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-20:29:25 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:29:45 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-20:29:45 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-20:29:45 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-20:29:45 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-make: *** [debug] Erreur 2
-20:31:13 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-20:31:13 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-20:31:14 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-20:31:14 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2
-20:31:55 **** Incremental Build of configuration Debug for project Source ****
-make all 
-make: rien à faire pour « all ».
-20:31:55 **** Incremental Build of configuration Debug for project testeur ****
-make all 
-make: rien à faire pour « all ».
-20:31:55 **** Incremental Build of configuration Debug for project utilisateur ****
-make all 
-make: rien à faire pour « all ».
-20:31:56 **** Incremental Build of project GestionReferenceGUI ****
-make debug 
-make -f Makefile.Debug
-make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-g++ -c -pipe -g -Wall -W -D_REENTRANT -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -I/usr/share/qt4/mkspecs/linux-g++ -I. -I/usr/include/qt4/QtCore -I/usr/include/qt4/QtGui -I/usr/include/qt4 -I../Source -Idebug -I. -o debug/ajouterouvrageqt.o ajouterouvrageqt.cpp
-ajouterouvrageqt.cpp: In constructor ‘ajouterOuvrageQt::ajouterOuvrageQt(QWidget*)’:
-ajouterouvrageqt.cpp:4:21: error: no matching function for call to ‘biblio::Ouvrage::Ouvrage()’
-     : QDialog(parent)
-                     ^
-In file included from ajouterouvrageqt.h:7:0,
-                 from ajouterouvrageqt.cpp:1:
-../Source/Ouvrage.h:24:1: note: candidate: biblio::Ouvrage::Ouvrage(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, int, std::__cxx11::string)
- Ouvrage(std::string p_auteurs, std::string p_titre, std::string p_editeur, std::string p_ville, int p_annee, std::string p_identifiant);
- ^
-../Source/Ouvrage.h:24:1: note:   candidate expects 6 arguments, 0 provided
-../Source/Ouvrage.h:19:7: note: candidate: biblio::Ouvrage::Ouvrage(const biblio::Ouvrage&)
- class Ouvrage: public Reference
-       ^
-../Source/Ouvrage.h:19:7: note:   candidate expects 1 argument, 0 provided
-Makefile.Debug:224 : la recette pour la cible « debug/ajouterouvrageqt.o » a échouée
-make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
-make[1]: *** [debug/ajouterouvrageqt.o] Erreur 1
-Makefile:50 : la recette pour la cible « debug » a échouée
-make: *** [debug] Erreur 2

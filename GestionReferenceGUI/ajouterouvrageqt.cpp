@@ -1,9 +1,10 @@
 #include "ajouterouvrageqt.h"
 
 ajouterOuvrageQt::ajouterOuvrageQt(QWidget *parent)
-    : QDialog(parent)
+		: QDialog(parent)
 {
 	ui.setupUi(this);
+	QObject::connect(ui.enregistrerOuvrage, SIGNAL(clicked()), SLOT(enregisterOuvrage()));
 }
 
 ajouterOuvrageQt::~ajouterOuvrageQt()
@@ -12,24 +13,30 @@ ajouterOuvrageQt::~ajouterOuvrageQt()
 }
 
 std::string ajouterOuvrageQt::reqAuteurs() const{
-	return ui.nomAuteurOuvrage->text().toStdString();
+	return ui.nomAuteurOuvrage ->text().toStdString();
 }
 std::string ajouterOuvrageQt::reqTitre() const{
-	return ui.titreOeuvreOuvrage->text().toStdString();
+	return ui.titreOeuvreOuvrage ->text().toStdString();
 }
 std::string ajouterOuvrageQt::reqVille() const{
-	return ui.villeEditionOuvrage->text().toStdString();
+	return ui.villeEditionOuvrage ->text().toStdString();
 }
 std::string ajouterOuvrageQt::reqEditeur() const{
-	return ui.editeurOuvrage->text().toStdString();
+	return ui.editeurOuvrage ->text().toStdString();
 }
 int ajouterOuvrageQt::reqAnnee() const{
-	return ui.anneeEditionOuvrage->text().toInt();
+	return ui.anneeEditionOuvrage ->text().toInt();
 }
 std::string ajouterOuvrageQt::reqIdentifiant() const{
-	return ui.codeISBNOuvrage->text().toStdString();
+	return ui.codeISBNOuvrage ->text().toStdString();
 }
-void ajouterOuvrageQt::enregistrerOuvrage(){
-	m_ouvrage = biblio::Ouvrage(reqAuteurs(), reqTitre(), reqEditeur(), reqVille(), reqAnnee(), reqIdentifiant());
-	accept();
+
+void ajouterOuvrageQt::enregisterOuvrage(){
+	if(util::validerFormatNom(this->reqAuteurs()) and (!((this->reqTitre()).empty())) and util::validerFormatNom(this->reqEditeur())
+	and util::validerFormatNom(this->reqVille()) and (this->reqAnnee() > 0) and util::validerCodeIsbn(this->reqIdentifiant())){
+		accept();
+	}
+	else{
+
+	}
 }

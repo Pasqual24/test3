@@ -3,6 +3,7 @@
 #include "ajouterjournalqt.h"
 #include "afficherbibliographieqt.h"
 #include "supprimerreferenceqt.h"
+#include <iostream>
 
 
 GestionReferenceGUI::GestionReferenceGUI(QWidget *parent)
@@ -24,7 +25,6 @@ void GestionReferenceGUI::ajoutOuvrage(){
 	ajouterOuvrageQt aoqt;
 	aoqt.exec();
 }
-
 void GestionReferenceGUI::ajoutJournal(){
 	ajouterJournalQt ajqt;
 	ajqt.exec();
