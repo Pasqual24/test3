@@ -3,6 +3,8 @@
 
 #include <QtGui/QDialog>
 #include "ui_ajouterjournalqt.h"
+#include <string>
+#include "Journal.h"
 
 class ajouterJournalQt : public QDialog
 {
@@ -11,6 +13,9 @@ class ajouterJournalQt : public QDialog
 public:
     ajouterJournalQt(QWidget *parent = 0);
     ~ajouterJournalQt();
+    std::string reqAuteurs() const;
+    std::string reqTitre() const;
+    std::string reqNom() const;
 
 private:
     Ui::ajouterJournalQtClass ui;

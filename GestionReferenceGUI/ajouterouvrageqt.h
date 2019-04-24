@@ -3,6 +3,8 @@
 
 #include <QtGui/QDialog>
 #include "ui_ajouterouvrageqt.h"
+#include <string>
+#include "Ouvrage.h"
 
 class ajouterOuvrageQt : public QDialog
 {
@@ -11,9 +13,19 @@ class ajouterOuvrageQt : public QDialog
 public:
     ajouterOuvrageQt(QWidget *parent = 0);
     ~ajouterOuvrageQt();
+    std::string reqAuteurs() const;
+    std::string reqTitre() const;
+    std::string reqVille() const;
+    std::string reqEditeur() const;
+    int reqAnnee() const;
+    std::string reqIdentifiant() const;
+
+private slots:
+	void enregistrerOuvrage();
 
 private:
     Ui::ajouterOuvrageQtClass ui;
+    biblio::Ouvrage m_ouvrage;
 };
 
 #endif // AJOUTEROUVRAGEQT_H

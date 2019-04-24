@@ -23,21 +23,11 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="titreOeuvreJournal">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>40</y>
-     <width>113</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="nomRevueJournal">
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>70</y>
+     <y>40</y>
      <width>113</width>
      <height>27</height>
     </rect>
@@ -47,17 +37,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>100</y>
-     <width>113</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="numeroJournal">
-   <property name="geometry">
-    <rect>
-     <x>220</x>
-     <y>130</y>
+     <y>70</y>
      <width>113</width>
      <height>27</height>
     </rect>
@@ -67,7 +47,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>160</y>
+     <y>110</y>
      <width>113</width>
      <height>27</height>
     </rect>
@@ -77,7 +57,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>190</y>
+     <y>150</y>
      <width>113</width>
      <height>27</height>
     </rect>
@@ -87,7 +67,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>220</y>
+     <y>190</y>
      <width>113</width>
      <height>27</height>
     </rect>
@@ -96,7 +76,7 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>84</x>
+     <x>100</x>
      <y>10</y>
      <width>91</width>
      <height>20</height>
@@ -106,24 +86,11 @@
     <string>Nom de l'auteur</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>94</x>
-     <y>40</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Titre de l'oeuvre</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>94</x>
-     <y>70</y>
+     <x>100</x>
+     <y>40</y>
      <width>91</width>
      <height>20</height>
     </rect>
@@ -135,8 +102,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>74</x>
-     <y>100</y>
+     <x>90</x>
+     <y>70</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -145,24 +112,11 @@
     <string>Numéro du volume</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>84</x>
-     <y>130</y>
-     <width>111</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Numéro du journal</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>84</x>
-     <y>160</y>
+     <x>90</x>
+     <y>110</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -174,8 +128,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>190</y>
+     <x>80</x>
+     <y>150</y>
      <width>121</width>
      <height>20</height>
     </rect>
@@ -187,8 +141,8 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>94</x>
-     <y>220</y>
+     <x>90</x>
+     <y>190</y>
      <width>101</width>
      <height>20</height>
     </rect>
@@ -200,8 +154,8 @@
   <widget class="QPushButton" name="enregistrerJournal">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>260</y>
+     <x>110</x>
+     <y>250</y>
      <width>80</width>
      <height>28</height>
     </rect>
@@ -213,8 +167,8 @@
   <widget class="QPushButton" name="retourJournal">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>260</y>
+     <x>250</x>
+     <y>250</y>
      <width>80</width>
      <height>28</height>
     </rect>
