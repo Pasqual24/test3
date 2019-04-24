@@ -24,6 +24,7 @@ private slots:
 
 private:
     Ui::ajouterOuvrageQtClass ui;
+    //biblio::Ouvrage m_ouvrage;
 };
 
 #endif // AJOUTEROUVRAGEQT_H

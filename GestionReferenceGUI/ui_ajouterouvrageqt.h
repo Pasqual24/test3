@@ -43,7 +43,7 @@ public:
     {
         if (ajouterOuvrageQtClass->objectName().isEmpty())
             ajouterOuvrageQtClass->setObjectName(QString::fromUtf8("ajouterOuvrageQtClass"));
-        ajouterOuvrageQtClass->resize(400, 300);
+        ajouterOuvrageQtClass->resize(493, 300);
         nomAuteurOuvrage = new QLineEdit(ajouterOuvrageQtClass);
         nomAuteurOuvrage->setObjectName(QString::fromUtf8("nomAuteurOuvrage"));
         nomAuteurOuvrage->setGeometry(QRect(210, 10, 113, 27));

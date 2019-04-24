@@ -34,6 +34,7 @@ std::string ajouterOuvrageQt::reqIdentifiant() const{
 void ajouterOuvrageQt::enregisterOuvrage(){
 	if(util::validerFormatNom(this->reqAuteurs()) and (!((this->reqTitre()).empty())) and util::validerFormatNom(this->reqEditeur())
 	and util::validerFormatNom(this->reqVille()) and (this->reqAnnee() > 0) and util::validerCodeIsbn(this->reqIdentifiant())){
+			//m_ouvrage = biblio::Ouvrage(this->reqAuteurs(), this->reqTitre(), this->reqEditeur(), this->reqVille(), this->reqAnnee(), this->reqIdentifiant());
 		accept();
 	}
 	else{
