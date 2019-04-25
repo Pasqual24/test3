@@ -35,18 +35,30 @@ void GestionReferenceGUI::ajoutOuvrage(){
 
 			}
 			catch(PreconditionException& e){
-				QString message = (e.what());
-				QMessageBox::information(0, "erreur", message);
+				ui.erreurSupprimer->setText("Champ invalide.");
+				throw;
 			}
 			catch(ReferenceDejaPresenteException& e){
-				QString message = (e.what());
-				QMessageBox::information(0, "erreur", message);
+				ui.erreurSupprimer->setText("Cette référence est déjà présente.");
 			}
 	}
 }
 void GestionReferenceGUI::ajoutJournal(){
 	ajouterJournalQt ajqt;
-	ajqt.exec();
+	if(ajqt.exec()){
+			try{
+				biblio::Journal m_journal(ajqt.reqAuteurs(), ajqt.reqTitre(), ajqt.reqAnnee(), ajqt.reqNom(), ajqt.reqVolume(), ajqt.reqNumero(), ajqt.reqPage(), ajqt.reqIdentifiant());
+				bibliographie.ajouterReference(m_journal);
+
+				}
+				catch(PreconditionException& e){
+					ui.erreurSupprimer->setText("Champ invalide.");
+					throw;
+				}
+				catch(ReferenceDejaPresenteException& e){
+					ui.erreurSupprimer->setText("Cette référence est déjà présente.");
+				}
+		}
 }
 
 void GestionReferenceGUI::afficherBibliographie(){
@@ -57,11 +69,10 @@ void GestionReferenceGUI::afficherBibliographie(){
 void GestionReferenceGUI::supprimerReference(){
 	if(util::validerCodeIsbn(reqIdentifiantASupprimer()) or util::validerCodeIssn(reqIdentifiantASupprimer())){
 		try{
-
+			bibliographie.supprimerReference(reqIdentifiantASupprimer());
 			}
-			catch(PreconditionException& e){
-				QString message = (e.what());
-				QMessageBox::information(0, "erreur", message);
+			catch(ReferenceAbsenteException& e){
+				ui.erreurSupprimer->setText("Cet identifiant n'est pas dans la bibliographie.");
 			}
 
 	}

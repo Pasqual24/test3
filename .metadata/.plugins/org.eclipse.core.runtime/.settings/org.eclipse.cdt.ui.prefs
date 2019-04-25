@@ -3,6 +3,7 @@ eclipse.preferences.version=1
 formatter_profile=org.eclipse.cdt.ui.default.allman_profile
 formatter_settings_version=1
 formattingConfirmScopeForEmptySelection=false
+markOccurrences=false
 nameStyle.constant.prefix=
 nameStyle.constant.suffix=
 nameStyle.constant.wordDelimiter=_

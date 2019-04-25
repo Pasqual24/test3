@@ -16,6 +16,14 @@ public:
     std::string reqAuteurs() const;
     std::string reqTitre() const;
     std::string reqNom() const;
+    std::string reqIdentifiant() const;
+    int reqAnnee() const;
+    int reqVolume() const;
+    int reqNumero() const;
+    int reqPage() const;
+
+private slots:
+	void enregistrerJournal();
 
 private:
     Ui::ajouterJournalQtClass ui;
