@@ -1,10 +1,12 @@
 #include "gestionreferencegui.h"
 #include "ajouterouvrageqt.h"
 #include "ajouterjournalqt.h"
-#include "afficherbibliographieqt.h"
-#include "supprimerreferenceqt.h"
+#include "ReferenceException.h"
 #include <iostream>
+#include <qmessagebox.h>
+#include <qtextstream.h>
 
+biblio::Bibliographie bibliographie("Ma Bibliographie");
 
 GestionReferenceGUI::GestionReferenceGUI(QWidget *parent)
     : QMainWindow(parent)
@@ -20,10 +22,27 @@ GestionReferenceGUI::~GestionReferenceGUI()
 {
 
 }
+std::string GestionReferenceGUI::reqIdentifiantASupprimer() const{
+	return ui.identifiantSupprimer ->text().toStdString();
+}
 
 void GestionReferenceGUI::ajoutOuvrage(){
 	ajouterOuvrageQt aoqt;
-	aoqt.exec();
+	if(aoqt.exec()){
+		try{
+			biblio::Ouvrage m_ouvrage(aoqt.reqAuteurs(), aoqt.reqTitre(), aoqt.reqEditeur(), aoqt.reqVille(), aoqt.reqAnnee(), aoqt.reqIdentifiant());
+			bibliographie.ajouterReference(m_ouvrage);
+
+			}
+			catch(PreconditionException& e){
+				QString message = (e.what());
+				QMessageBox::information(0, "erreur", message);
+			}
+			catch(ReferenceDejaPresenteException& e){
+				QString message = (e.what());
+				QMessageBox::information(0, "erreur", message);
+			}
+	}
 }
 void GestionReferenceGUI::ajoutJournal(){
 	ajouterJournalQt ajqt;
@@ -31,11 +50,19 @@ void GestionReferenceGUI::ajoutJournal(){
 }
 
 void GestionReferenceGUI::afficherBibliographie(){
-	afficherBibliographieQt abqt;
-	abqt.exec();
+	QString qTexte = QString::fromStdString(bibliographie.reqBibliographieFormate());
+	ui.afficherBiblio->setText(qTexte);
 }
 
 void GestionReferenceGUI::supprimerReference(){
-	supprimerReferenceQt srqt;
-	srqt.exec();
+	if(util::validerCodeIsbn(reqIdentifiantASupprimer()) or util::validerCodeIssn(reqIdentifiantASupprimer())){
+		try{
+
+			}
+			catch(PreconditionException& e){
+				QString message = (e.what());
+				QMessageBox::information(0, "erreur", message);
+			}
+
+	}
 }

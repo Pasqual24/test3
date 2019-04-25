@@ -14,10 +14,13 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTextEdit>
 #include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,6 +34,9 @@ public:
     QPushButton *ajouterJournal;
     QPushButton *supprimerReference;
     QPushButton *affichierBibliographie;
+    QTextEdit *afficherBiblio;
+    QLabel *identifiantISSNISBN;
+    QLineEdit *identifiantSupprimer;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,19 +49,28 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         quitter = new QPushButton(centralwidget);
         quitter->setObjectName(QString::fromUtf8("quitter"));
-        quitter->setGeometry(QRect(310, 310, 80, 28));
+        quitter->setGeometry(QRect(150, 270, 80, 28));
         ajouterOuvrage = new QPushButton(centralwidget);
         ajouterOuvrage->setObjectName(QString::fromUtf8("ajouterOuvrage"));
-        ajouterOuvrage->setGeometry(QRect(250, 50, 191, 28));
+        ajouterOuvrage->setGeometry(QRect(100, 50, 191, 28));
         ajouterJournal = new QPushButton(centralwidget);
         ajouterJournal->setObjectName(QString::fromUtf8("ajouterJournal"));
-        ajouterJournal->setGeometry(QRect(270, 110, 161, 28));
+        ajouterJournal->setGeometry(QRect(110, 90, 161, 28));
         supprimerReference = new QPushButton(centralwidget);
         supprimerReference->setObjectName(QString::fromUtf8("supprimerReference"));
-        supprimerReference->setGeometry(QRect(260, 250, 171, 28));
+        supprimerReference->setGeometry(QRect(110, 200, 171, 28));
         affichierBibliographie = new QPushButton(centralwidget);
         affichierBibliographie->setObjectName(QString::fromUtf8("affichierBibliographie"));
-        affichierBibliographie->setGeometry(QRect(260, 180, 171, 28));
+        affichierBibliographie->setGeometry(QRect(110, 140, 171, 28));
+        afficherBiblio = new QTextEdit(centralwidget);
+        afficherBiblio->setObjectName(QString::fromUtf8("afficherBiblio"));
+        afficherBiblio->setGeometry(QRect(360, 20, 371, 261));
+        identifiantISSNISBN = new QLabel(centralwidget);
+        identifiantISSNISBN->setObjectName(QString::fromUtf8("identifiantISSNISBN"));
+        identifiantISSNISBN->setGeometry(QRect(380, 310, 151, 20));
+        identifiantSupprimer = new QLineEdit(centralwidget);
+        identifiantSupprimer->setObjectName(QString::fromUtf8("identifiantSupprimer"));
+        identifiantSupprimer->setGeometry(QRect(540, 310, 113, 27));
         GestionReferenceGUIClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(GestionReferenceGUIClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -79,6 +94,7 @@ public:
         ajouterJournal->setText(QApplication::translate("GestionReferenceGUIClass", "Ajouter un journal", 0, QApplication::UnicodeUTF8));
         supprimerReference->setText(QApplication::translate("GestionReferenceGUIClass", "Supprimer une r\303\251f\303\251rence", 0, QApplication::UnicodeUTF8));
         affichierBibliographie->setText(QApplication::translate("GestionReferenceGUIClass", "Afficher la bibliographie", 0, QApplication::UnicodeUTF8));
+        identifiantISSNISBN->setText(QApplication::translate("GestionReferenceGUIClass", "Code ISSN ou ISBN valide", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -80,12 +80,12 @@ bool Bibliographie::referenceEstDejaPresente(
 string Bibliographie::reqBibliographieFormate() const
 {
 	std::ostringstream os;
+	os << "Bibliographie\n" << "===============================\n";
 	for(unsigned int i = 0; i < m_vReferences.size(); i++){
-		os << "[" << i + 1 << "] " << m_vReferences[i]->reqReferenceFormate();
+		os << "[" << i + 1 << "] " << m_vReferences[i]->reqReferenceFormate() << endl;
 	}
 	return os.str();
 }
-
 /**
  *\brief Un destructeur pour la classe Bibliographie.
  */
@@ -96,5 +96,38 @@ Bibliographie::~Bibliographie()
 		m_vReferences.erase(m_vReferences.begin() + i);
 	}
 }
+
+void Bibliographie::supprimerReference(const std::string& p_identifiant)
+{
+	try
+	{
+		vector<Reference*>::iterator iterI = m_vReferences.begin();
+		bool trouve = false;
+		cout << "test version 5" << endl;
+
+		while (!trouve && iterI != m_vReferences.end())
+		{
+			if((*iterI)->reqIdentifiant() == p_identifiant)
+			{
+				trouve = true;
+				m_vReferences.erase(iterI);
+				cout << "EFFACÉ" << endl;
+				break;
+			}
+			iterI++;
+		}
+
+		if (!trouve)
+		{
+			throw ReferenceAbsenteException("La référence n'est pas présente dans la bibliographie");
+		}
+
+	}
+	catch (ReferenceAbsenteException& e)
+	{
+		cout << "exception, do something kthx" << endl;
+	}
+}
+
 }
 

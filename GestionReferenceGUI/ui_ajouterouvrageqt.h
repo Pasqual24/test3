@@ -38,6 +38,7 @@ public:
     QLabel *label_6;
     QPushButton *enregistrerOuvrage;
     QPushButton *retourOuvrage;
+    QLabel *erreurOuvrage;
 
     void setupUi(QDialog *ajouterOuvrageQtClass)
     {
@@ -86,6 +87,10 @@ public:
         retourOuvrage = new QPushButton(ajouterOuvrageQtClass);
         retourOuvrage->setObjectName(QString::fromUtf8("retourOuvrage"));
         retourOuvrage->setGeometry(QRect(240, 250, 80, 28));
+        erreurOuvrage = new QLabel(ajouterOuvrageQtClass);
+        erreurOuvrage->setObjectName(QString::fromUtf8("erreurOuvrage"));
+        erreurOuvrage->setGeometry(QRect(370, 30, 101, 221));
+        erreurOuvrage->setWordWrap(true);
 
         retranslateUi(ajouterOuvrageQtClass);
 
@@ -95,6 +100,7 @@ public:
     void retranslateUi(QDialog *ajouterOuvrageQtClass)
     {
         ajouterOuvrageQtClass->setWindowTitle(QApplication::translate("ajouterOuvrageQtClass", "Ajouter un ouvrage", 0, QApplication::UnicodeUTF8));
+        codeISBNOuvrage->setText(QApplication::translate("ajouterOuvrageQtClass", "ISBN 978-0-387-77591-3", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("ajouterOuvrageQtClass", "Nom de l'auteur", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("ajouterOuvrageQtClass", "Titre de l'oeuvre", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("ajouterOuvrageQtClass", "Ville d'\303\251dition", 0, QApplication::UnicodeUTF8));
@@ -103,6 +109,7 @@ public:
         label_6->setText(QApplication::translate("ajouterOuvrageQtClass", "Code ISBN valide", 0, QApplication::UnicodeUTF8));
         enregistrerOuvrage->setText(QApplication::translate("ajouterOuvrageQtClass", "Enregistrer", 0, QApplication::UnicodeUTF8));
         retourOuvrage->setText(QApplication::translate("ajouterOuvrageQtClass", "Retour", 0, QApplication::UnicodeUTF8));
+        erreurOuvrage->setText(QString());
     } // retranslateUi
 
 };

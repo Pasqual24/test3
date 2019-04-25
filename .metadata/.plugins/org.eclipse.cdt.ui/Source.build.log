@@ -1,6 +1,49 @@
-16:32:24 **** Incremental Build of configuration Debug for project Source ****
+20:49:02 **** Build of configuration Debug for project Source ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../Bibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie.d" -MT"Bibliographie.o" -o "Bibliographie.o" "../Bibliographie.cpp"
+Finished building: ../Bibliographie.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Journal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal.d" -MT"Journal.o" -o "Journal.o" "../Journal.cpp"
+Finished building: ../Journal.cpp
+ 
+Building file: ../Ouvrage.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage.d" -MT"Ouvrage.o" -o "Ouvrage.o" "../Ouvrage.cpp"
+Finished building: ../Ouvrage.cpp
+ 
+Building file: ../Reference.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference.d" -MT"Reference.o" -o "Reference.o" "../Reference.cpp"
+Finished building: ../Reference.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+../validationFormat.cpp: In function ‘bool util::validerCodeIssn(const string&)’:
+../validationFormat.cpp:71:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+../validationFormat.cpp: In function ‘bool util::validerCodeIsbn(const string&)’:
+../validationFormat.cpp:134:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../validationFormat.cpp
+ 
+Building target: libSource.a
+Invoking: GCC Archiver
+ar -r  "libSource.a"  ./Bibliographie.o ./ContratException.o ./Journal.o ./Ouvrage.o ./Reference.o ./validationFormat.o   
+ar: création de libSource.a
+Finished building target: libSource.a
+ 
 
-16:32:24 Build Finished (took 169ms)
+20:49:03 Build Finished (took 1s.423ms)
 

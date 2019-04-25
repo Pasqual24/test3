@@ -26,6 +26,7 @@ public:
 	void ajouterReference (const Reference& p_nouvelleReference);
 	std::string reqBibliographieFormate() const;
 	const std::string& reqNombiblio() const;
+	void supprimerReference(const std::string& p_identifiant);
 
 private:
 

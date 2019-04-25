@@ -1,6 +1,30 @@
-16:32:24 **** Incremental Build of configuration Debug for project testeur ****
+20:49:03 **** Build of configuration Debug for project testeur ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../Bibliographie_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Bibliographie_Testeur.d" -MT"Bibliographie_Testeur.o" -o "Bibliographie_Testeur.o" "../Bibliographie_Testeur.cpp"
+Finished building: ../Bibliographie_Testeur.cpp
+ 
+Building file: ../Journal_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Journal_Testeur.d" -MT"Journal_Testeur.o" -o "Journal_Testeur.o" "../Journal_Testeur.cpp"
+Finished building: ../Journal_Testeur.cpp
+ 
+Building file: ../Ouvrage_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Ouvrage_Testeur.d" -MT"Ouvrage_Testeur.o" -o "Ouvrage_Testeur.o" "../Ouvrage_Testeur.cpp"
+Finished building: ../Ouvrage_Testeur.cpp
+ 
+Building file: ../Reference_Testeur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Reference_Testeur.d" -MT"Reference_Testeur.o" -o "Reference_Testeur.o" "../Reference_Testeur.cpp"
+Finished building: ../Reference_Testeur.cpp
+ 
+Building target: testeur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "testeur"  ./Bibliographie_Testeur.o ./Journal_Testeur.o ./Ouvrage_Testeur.o ./Reference_Testeur.o   -lSource -lgtest_main -lgtest -lpthread
+Finished building target: testeur
+ 
 
-16:32:24 Build Finished (took 228ms)
+20:49:06 Build Finished (took 2s.331ms)
 

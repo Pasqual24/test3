@@ -110,7 +110,6 @@ void Reference::verifieInvariant() const{
 	INVARIANT(util::validerFormatNom(m_auteurs) &&
 			!m_titre.empty() && m_annee > 0 &&
 			(util::validerCodeIsbn(m_identifiant)||util::validerCodeIssn(m_identifiant)));
-
 }
 
 }

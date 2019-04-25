@@ -5,6 +5,7 @@
 #include "ui_ajouterouvrageqt.h"
 #include <string>
 #include "Ouvrage.h"
+#include "ContratException.h"
 
 class ajouterOuvrageQt : public QDialog
 {
@@ -24,7 +25,7 @@ private slots:
 
 private:
     Ui::ajouterOuvrageQtClass ui;
-    //biblio::Ouvrage m_ouvrage;
+
 };
 
 #endif // AJOUTEROUVRAGEQT_H

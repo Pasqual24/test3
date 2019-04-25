@@ -1,6 +1,15 @@
-16:32:24 **** Incremental Build of configuration Debug for project utilisateur ****
+20:49:06 **** Build of configuration Debug for project utilisateur ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../gestionBibliographie.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source" -ISource -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"gestionBibliographie.d" -MT"gestionBibliographie.o" -o "gestionBibliographie.o" "../gestionBibliographie.cpp"
+Finished building: ../gestionBibliographie.cpp
+ 
+Building target: utilisateur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP4 avec Pasquale/master/Source/Debug" -o "utilisateur"  ./gestionBibliographie.o   -lSource
+Finished building target: utilisateur
+ 
 
-16:32:24 Build Finished (took 172ms)
+20:49:06 Build Finished (took 479ms)
 

@@ -72,6 +72,9 @@
      <height>27</height>
     </rect>
    </property>
+   <property name="text">
+    <string>ISBN 978-0-387-77591-3</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -175,6 +178,22 @@
    </property>
    <property name="text">
     <string>Retour</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="erreurOuvrage">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>30</y>
+     <width>101</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
