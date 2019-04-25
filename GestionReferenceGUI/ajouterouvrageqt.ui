@@ -73,7 +73,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>ISBN 978-0-387-77591-3</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -199,5 +199,22 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>retourOuvrage</sender>
+   <signal>clicked()</signal>
+   <receiver>ajouterOuvrageQtClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>279</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -39,7 +39,7 @@ void GestionReferenceGUI::ajoutOuvrage(){
 				throw;
 			}
 			catch(ReferenceDejaPresenteException& e){
-				ui.erreurSupprimer->setText("Cette référence est déjà présente.");
+				ui.erreurSupprimer->setText("Cette reference est deja presente.");
 			}
 	}
 }
@@ -56,7 +56,7 @@ void GestionReferenceGUI::ajoutJournal(){
 					throw;
 				}
 				catch(ReferenceDejaPresenteException& e){
-					ui.erreurSupprimer->setText("Cette référence est déjà présente.");
+					ui.erreurSupprimer->setText("Cette reference est deje presente.");
 				}
 		}
 }

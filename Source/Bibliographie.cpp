@@ -12,7 +12,6 @@
 #include <vector>
 #include "ContratException.h"
 #include "ReferenceException.h"
-//#include <QMessageBox>
 
 using namespace std;
 using namespace biblio;
@@ -39,19 +38,12 @@ const string& Bibliographie::reqNombiblio() const
  */
 void Bibliographie::ajouterReference(const Reference& p_nouvelleReference)
 {
-	try{
 		if(Bibliographie::referenceEstDejaPresente(p_nouvelleReference.reqIdentifiant()))
 		{
-			cout << "DÉJÀ PRÉSENTE"	 << endl;
 			throw ReferenceDejaPresenteException("OYEHA");
 		}
 		m_vReferences.push_back(p_nouvelleReference.clone());
 	}
-	catch (ReferenceException& e)
-	{
-		cout << "DÉJÀ PRÉSENTE"	 << endl;
-	}
-
 }
 /**
  * \brief Méthode qui vérifie si la nouvelle référence est déjà dans le vecteur.
@@ -99,11 +91,9 @@ Bibliographie::~Bibliographie()
 
 void Bibliographie::supprimerReference(const std::string& p_identifiant)
 {
-	try
-	{
+
 		vector<Reference*>::iterator iterI = m_vReferences.begin();
 		bool trouve = false;
-		cout << "test version 5" << endl;
 
 		while (!trouve && iterI != m_vReferences.end())
 		{
@@ -111,7 +101,6 @@ void Bibliographie::supprimerReference(const std::string& p_identifiant)
 			{
 				trouve = true;
 				m_vReferences.erase(iterI);
-				cout << "EFFACÉ" << endl;
 				break;
 			}
 			iterI++;
@@ -123,11 +112,7 @@ void Bibliographie::supprimerReference(const std::string& p_identifiant)
 		}
 
 	}
-	catch (ReferenceAbsenteException& e)
-	{
-		cout << "exception, do something kthx" << endl;
-	}
-}
 
-}
+
+
 

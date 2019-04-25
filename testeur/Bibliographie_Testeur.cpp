@@ -39,29 +39,6 @@ public:
 TEST_F(BiblioFix, reqNom){
 	ASSERT_EQ("bibliographie", t_bib.reqNombiblio());
 }
-/**
- * \brief Test de la fonction ajouterReference de la classe Bibliographie.
- */
-TEST_F(BiblioFix, ajouterReference){
-	Journal jour("Guillaume St-Georges", "Au pays des merveilles", 2010, "Journal Le Soleil", 3, 4, 100, "ISSN 1937-4771");
-	Ouvrage testouvrage("Guillaume St-Georges", "Au pays des merveilles", "Edito", "Montreal", 2010, "ISBN 978-0-387-77591-3");
-	t_bib.ajouterReference(jour);
-	t_bib.ajouterReference(testouvrage);
-	ASSERT_EQ("[1] " + jour.reqReferenceFormate() + "[2] " + testouvrage.reqReferenceFormate(), t_bib.reqBibliographieFormate());
-}
-/**
- * \brief Test de la fonction reqBibliographieFormate de la classe Bibliographie.
- */
-TEST_F(BiblioFix, reqBibliographieFormate){
-	Journal jour("Guillaume St-Georges", "Au pays des merveilles", 2010, "Journal Le Soleil", 3, 4, 100, "ISSN 1937-4771");
-	Ouvrage testouvrage("Guillaume St-Georges", "Au pays des merveilles", "Edito", "Montreal", 2010, "ISBN 978-0-387-77591-3");
-	t_bib.ajouterReference(jour);
-	t_bib.ajouterReference(testouvrage);
-	ASSERT_EQ("[1] " + jour.reqReferenceFormate() +"[2] " + testouvrage.reqReferenceFormate(), t_bib.reqBibliographieFormate());
-}
-/**
- * \brief Test de la fonction referenceEstDejaPresente de la classe Bibliographie
- */
 
 /**
  * \brief Test de la fonction referenceEstDejaPresente de la classe Bibliographie

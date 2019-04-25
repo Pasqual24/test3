@@ -93,6 +93,7 @@ public:
         erreurOuvrage->setWordWrap(true);
 
         retranslateUi(ajouterOuvrageQtClass);
+        QObject::connect(retourOuvrage, SIGNAL(clicked()), ajouterOuvrageQtClass, SLOT(close()));
 
         QMetaObject::connectSlotsByName(ajouterOuvrageQtClass);
     } // setupUi
@@ -100,7 +101,7 @@ public:
     void retranslateUi(QDialog *ajouterOuvrageQtClass)
     {
         ajouterOuvrageQtClass->setWindowTitle(QApplication::translate("ajouterOuvrageQtClass", "Ajouter un ouvrage", 0, QApplication::UnicodeUTF8));
-        codeISBNOuvrage->setText(QApplication::translate("ajouterOuvrageQtClass", "ISBN 978-0-387-77591-3", 0, QApplication::UnicodeUTF8));
+        codeISBNOuvrage->setText(QString());
         label->setText(QApplication::translate("ajouterOuvrageQtClass", "Nom de l'auteur", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("ajouterOuvrageQtClass", "Titre de l'oeuvre", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("ajouterOuvrageQtClass", "Ville d'\303\251dition", 0, QApplication::UnicodeUTF8));

@@ -219,5 +219,22 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>retourJournal</sender>
+   <signal>clicked()</signal>
+   <receiver>ajouterJournalQtClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

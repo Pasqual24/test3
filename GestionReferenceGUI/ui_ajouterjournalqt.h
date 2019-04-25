@@ -101,6 +101,7 @@ public:
         erreurJournal->setWordWrap(true);
 
         retranslateUi(ajouterJournalQtClass);
+        QObject::connect(retourJournal, SIGNAL(clicked()), ajouterJournalQtClass, SLOT(close()));
 
         QMetaObject::connectSlotsByName(ajouterJournalQtClass);
     } // setupUi

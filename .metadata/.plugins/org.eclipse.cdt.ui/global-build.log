@@ -1,6 +1,45 @@
-12:26:44 **** Incremental Build of configuration Debug for project testeur ****
+13:10:23 **** Incremental Build of configuration Debug for project Source ****
 make all 
 make: rien à faire pour « all ».
-12:26:55 **** Incremental Build of configuration Debug for project testeur ****
+13:10:24 **** Incremental Build of configuration Debug for project testeur ****
 make all 
 make: rien à faire pour « all ».
+13:10:24 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+13:10:24 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+13:10:27 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+13:10:27 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+13:10:27 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+13:10:27 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+13:12:05 **** Incremental Build of configuration Debug for project Source ****
+make all 
+make: rien à faire pour « all ».
+13:12:05 **** Incremental Build of configuration Debug for project testeur ****
+make all 
+make: rien à faire pour « all ».
+13:12:05 **** Incremental Build of configuration Debug for project utilisateur ****
+make all 
+make: rien à faire pour « all ».
+13:12:06 **** Incremental Build of project GestionReferenceGUI ****
+make debug 
+make -f Makefile.Debug
+make[1] : on entre dans le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
+make[1]: rien à faire pour « first ».
+make[1] : on quitte le répertoire « /home/etudiant/Bureau/TP4 avec Pasquale/master/GestionReferenceGUI »
